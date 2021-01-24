@@ -71,10 +71,13 @@ where $\mathcal{F}\{x(t)\} = X(\omega)$ and $\mathcal{F}\{x(t)\} = X(f)$ are **F
 - $\mathcal{F}\{X(t)\} = 2\pi x(-\omega)$
 - $\mathcal{F}\{X(t)\} = x(-f)$
 
+#### Complex Conjugate
+
+- $\mathcal{F}\{x^*(t)\} = X^*(-\omega)$
+- $\mathcal{F}\{x^*(t)\} = X^*(-f)$
+
 #### Symmetry
 
-- $X(\omega) = X^*(-\omega)$
-- $X(f)=X^*(f)$
 - $X(-\omega) = X^*(\omega)$
 - $X(-f) = X^*(f)$
 
@@ -116,6 +119,11 @@ where $\mathcal{F}\{x(t)\} = X(\omega)$ and $\mathcal{F}\{x(t)\} = X(f)$ are **F
 
 - $\mathcal{F}\{x(t)y(t)\} = \frac{1}{2\pi}(X(\omega)*Y(\omega)) = \frac{1}{2\pi}\int_{-\infty}^{\infty}X(\lambda)Y(\omega-\lambda)d\lambda = \frac{1}{2\pi}\int_{-\infty}^{\infty}Y(\lambda)X(\omega-\lambda)d\lambda$
 - $\mathcal{F}\{x(t)y(t)\} = X(f)*Y(f) = \int_{-\infty}^{\infty}X(\lambda)Y(f-\lambda)d\lambda = \int_{-\infty}^{\infty}Y(\lambda)X(f-\lambda)d\lambda$
+
+#### Parseval's Theorem
+
+- $\int_{-\infty}^{\infty}x(t)y^*(t)dt = \frac{1}{2\pi}\int_{-\infty}^{\infty}X(\omega)Y^*(\omega)d\omega$
+- $\int_{-\infty}^{\infty}x(t)y^*(t)dt = \int_{-\infty}^{\infty}X(f)Y^*(f)df$
 
 ## Fourier Transform Table
 
