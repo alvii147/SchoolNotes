@@ -31,14 +31,15 @@ and $\widetilde{x}(t)$ is the **Fourier Series** of $x(t)$.
 
 Let $x(t)$ be a complex-valued periodic signal with period $T > 0$ and angular frequency $\omega_0 = \frac{2\pi}{T}$. Then,
 $$
-\widetilde{x}(t) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}(a_ncos(n\omega_0t) + b_nsin(n\omega_0t))
+\widetilde{x}(t) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}(a_ncos(n\omega_0t) + b_nsin(n\omega_0t)) \\[15pt]
+\widetilde{x}(t) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}(a_ncos(2\pi nf_0t) + b_nsin(2\pi nf_0t)) \\[15pt]
 $$
 where,
 $$
 \begin{align*}
-a_0 &= \frac{1}{T}\int_{-T}^{T}x(t)dt \\[15pt]
-a_n &= \frac{1}{T}\int_{-T}^{T}x(t)cos(n\omega_0t)dt \\[15pt]
-b_n &= \frac{1}{T}\int_{-T}^{T}x(t)sin(n\omega_0t)dt
+a_0 &= \frac{1}{T}\underset{T}{\int}x(t)dt \\[15pt]
+a_n &= \frac{2}{T}\underset{T}{\int}x(t)cos(n\omega_0t)dt = \frac{2}{T}\underset{T}{\int}x(t)cos(2\pi nf_0t)dt\\[15pt]
+b_n &= \frac{2}{T}\underset{T}{\int}x(t)sin(n\omega_0t)dt = \frac{2}{T}\underset{T}{\int}x(t)sin(2\pi nf_0t)dt\\[15pt]
 \end{align*}
 $$
 and $\widetilde{x}(t)$ is the **Fourier Series** of $x(t)$.
