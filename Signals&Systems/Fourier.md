@@ -6,11 +6,11 @@
 
 Let $x(t)$ be a complex-valued periodic signal with period $T > 0$ and angular frequency $\omega_0 = \frac{2\pi}{T}$. Then,
 $$
-\widetilde{x}(t) = \sum_{k=-\infty}^{\infty}X_ne^{jn\omega_0t}
+\widetilde{x}(t) = \sum_{n=-\infty}^{\infty}X_ne^{jn\omega_0t}
 $$
 where,
 $$
-X_n = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)e^{-jn\omega_0t}dt,\hspace{1cm}n\in\mathbb{Z}
+X_n = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)e^{-jn\omega_0t}dt
 $$
 
 and $\widetilde{x}(t)$ is the **Fourier Series** of $x(t)$.
@@ -23,7 +23,7 @@ $$
 $$
 where,
 $$
-X_n = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)e^{-jn\omega_0t}dt,\hspace{1cm}n\in\mathbb{Z}
+X_n = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)e^{-jn\omega_0t}dt
 $$
 and $\widetilde{x}(t)$ is the **Fourier Series** of $x(t)$.
 
@@ -94,8 +94,8 @@ where $\mathcal{F}\{x(t)\} = X(\omega)$ and $\mathcal{F}\{x(t)\} = X(f)$ are **F
 
 #### Frequency Shift
 
-- $\mathcal{F}\{e^{j\omega t}x(t)\} = X(\omega - \omega_0)$
-- $\mathcal{F}\{e^{j2\pi ft}x(t)\} = X(f - f_0)$
+- $\mathcal{F}\{e^{j\omega_0 t}x(t)\} = X(\omega - \omega_0)$
+- $\mathcal{F}\{e^{j2\pi f_0t}x(t)\} = X(f - f_0)$
 - $\mathcal{F}\{cos(\omega_0t)x(t)\} = \frac{X(\omega + \omega_0) + X(\omega - \omega_0)}{2}$
 - $\mathcal{F}\{cos(2\pi f_0t)x(t)\} = \frac{X(f + f_0) + X(f - f_0)}{2}$
 - $\mathcal{F}\{sin(\omega_0t)x(t)\} = j\frac{X(\omega + \omega_0) - X(\omega - \omega_0)}{2}$
@@ -121,6 +121,13 @@ where $\mathcal{F}\{x(t)\} = X(\omega)$ and $\mathcal{F}\{x(t)\} = X(f)$ are **F
 - $\mathcal{F}\{x(t)y(t)\} = \frac{1}{2\pi}(X(\omega)*Y(\omega)) = \frac{1}{2\pi}\int_{-\infty}^{\infty}X(\lambda)Y(\omega-\lambda)d\lambda = \frac{1}{2\pi}\int_{-\infty}^{\infty}Y(\lambda)X(\omega-\lambda)d\lambda$
 - $\mathcal{F}\{x(t)y(t)\} = X(f)*Y(f) = \int_{-\infty}^{\infty}X(\lambda)Y(f-\lambda)d\lambda = \int_{-\infty}^{\infty}Y(\lambda)X(f-\lambda)d\lambda$
 
+#### Multiplication by $t$
+
+- $\mathcal{F}\{tx(t)\} = jX'(\omega)$
+- $\mathcal{F}\{t^nx(t)\} = j^nX^{(n)}(\omega)$
+- $\mathcal{F}\{tx(t)\} = \frac{j}{2\pi}X'(f)$
+- $\mathcal{F}\{t^nx(t)\} = (\frac{j}{2\pi})^nX^{(n)}(f)$
+
 #### Parseval's Theorem
 
 - $\int_{-\infty}^{\infty}x(t)y^*(t)dt = \frac{1}{2\pi}\int_{-\infty}^{\infty}X(\omega)Y^*(\omega)d\omega$
@@ -139,5 +146,12 @@ $u(t)$ | $\pi\delta(\omega)+\frac{1}{j\omega}$ | $\frac{1}{2}\delta(f)+\frac{1}{
 $\prod(t)$ | $\pi sinc(\frac{\omega}{2\pi})$* | $sinc(f)$*
 $\Lambda(t)$ | $\pi^2sinc^2(\frac{\omega}{2\pi})$* | $sinc^2(f)$*
 $sgn(t)$ | $\frac{2}{j\omega}$ | $\frac{1}{j\pi f}$
+$e^{-\alpha t}u(t),\:[\alpha>0]$ | $\frac{1}{\alpha+j\omega}$ | $\frac{1}{\alpha+j2\pi f}$
+$e^{-\alpha t}u(-t),\:[\alpha>0]$ | $\frac{1}{\alpha-j\omega}$ | $\frac{1}{\alpha-j2\pi f}$
+$e^{-\alpha |t|},\:[\alpha>0]$ | $\frac{2\alpha}{\alpha^2+\omega^2}$ | $\frac{2\alpha}{\alpha^2+(2\pi f)^2}$ 
+$e^{-\alpha t^2}$ | $\sqrt{\frac{\pi}{\alpha}}e^{\frac{-\omega^2}{4\alpha}}$ | $\sqrt{\frac{\pi}{\alpha}}e^{\frac{-(2\pi f)^2}{4\alpha}}$ 
+$te^{-\alpha t}u(t),\:[\alpha>0]$ | $\frac{1}{(\alpha+j\omega)^2}$ | $\frac{1}{(\alpha+j2\pi f)^2}$ 
+$t^ne^{-\alpha t}u(t),\:[\alpha>0]$ | $\frac{n!}{(\alpha+j\omega)^{n+1}}$ | $\frac{n!}{(\alpha+j2\pi ft)^{n+1}}$ 
+$\sum\limits_{n=-\infty}^{\infty}\delta(t-nT_0)$ | $\omega_0\sum\limits_{n=-\infty}^{\infty}\delta(\omega-n\omega_0),\:\omega_0=\frac{2\pi}{T_0}$ | $\frac{1}{T_0}\sum\limits_{n=-\infty}^{\infty}\delta(f-\frac{n}{T_0})$ 
 
 *$sinc(t) = \frac{sin(\pi t)}{\pi t}$

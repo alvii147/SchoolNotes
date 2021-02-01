@@ -36,7 +36,9 @@ where $\mathcal{L}\{x(t)\} = X(s)$ is the **Laplace Transform** of $x(t)$.
 
 #### Final Value Theorem
 
-- $\lim\limits_{t \to \infty} x(t) = \lim\limits_{s \to 0} sX{s}$
+- $\lim\limits_{t \to \infty} x(t) = \lim\limits_{s \to 0} sX(s)$
+
+Condition: all poles of $sX(s)$ must have strictly negative real parts.
 
 ## Laplace Transform Table
 
@@ -48,6 +50,6 @@ $u(t)$ | $\frac{1}{s}$
 $t^n$ | $\frac{n!}{s^{n+1}}$
 $e^{\alpha t}f(t)$ | $F(s-\alpha)$
 $e^{\alpha t}$  | $\frac{n!}{(s-\alpha)^{n+1}}$
-$sin(\omega t)$ | $\frac{\omega}{s^2+\omega^2}$
-$cos(\omega t)$ | $\frac{s}{s^2+\omega^2}$
+$sin(\omega_0t)$ | $\frac{\omega_0}{s^2+\omega_0^2}$ 
+$cos(\omega_0t)$ | $\frac{s}{s^2+\omega_0^2}$ 
 
