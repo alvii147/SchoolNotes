@@ -44,12 +44,12 @@ Condition: all poles of $sX(s)$ must have strictly negative real parts.
 
 Signal $x(t)$ for $t\geq 0$ | Laplace Transform $X(s)$
 ---|---
-$\delta(t)$ | $1$
-$\delta^{(n)}(t)$ | $s^n$
-$u(t)$ | $\frac{1}{s}$
-$t^n$ | $\frac{n!}{s^{n+1}}$
-$e^{\alpha t}f(t)$ | $F(s-\alpha)$
-$e^{\alpha t}$  | $\frac{n!}{(s-\alpha)^{n+1}}$
-$sin(\omega_0t)$ | $\frac{\omega_0}{s^2+\omega_0^2}$ 
-$cos(\omega_0t)$ | $\frac{s}{s^2+\omega_0^2}$ 
+$\Large \delta(t)$ | $\Large 1$ 
+$\Large \delta^{(n)}(t)$ | $\Large s^n$ 
+$\Large u(t)$ | $\Large \frac{1}{s}$ 
+$\Large t^n$ | $\Large \frac{n!}{s^{n+1}}$ 
+$\Large e^{\alpha t}f(t)$ | $\Large F(s-\alpha)$ 
+$\Large e^{\alpha t}$  | $\Large \frac{n!}{(s-\alpha)^{n+1}}$ 
+$\Large sin(\omega_0t)$ | $\Large \frac{\omega_0}{s^2+\omega_0^2}$ 
+$\Large cos(\omega_0t)$ | $\Large \frac{s}{s^2+\omega_0^2}$ 
 
