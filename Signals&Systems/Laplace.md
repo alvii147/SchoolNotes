@@ -4,45 +4,45 @@
 
 Let $x(t)$ be a continuous-time signal and let $s$ be a complex number such that $s = \sigma + j\omega$. Then,
 $$
-\mathcal{L}\{x(t)\} = X(s) = \int_{0}^{\infty}x(\tau)e^{-s\tau}d\tau
+\Large \mathcal{L}\{x(t)\} = X(s) = \int_{0}^{\infty}x(\tau)e^{-s\tau}d\tau
 $$
 where $\mathcal{L}\{x(t)\} = X(s)$ is the **Laplace Transform** of $x(t)$.
 
 ## Properties
 
-#### Linearity
+### Linearity
 
-- $\mathcal{L}\{c_1x_1(t) + c_2x_2(t)\} = c_1\mathcal{L}\{x_1(t)\} + c_2\mathcal{L}\{x_2(t)\}$
+- $\Large \mathcal{L}\{c_1x_1(t) + c_2x_2(t)\} = c_1\mathcal{L}\{x_1(t)\} + c_2\mathcal{L}\{x_2(t)\}$
 
-#### Exponential Shift
+### Exponential Shift
 
-- $\mathcal{L}\{e^{\alpha t}x(t)\} = X(s-\alpha)$
+- $\Large \mathcal{L}\{e^{\alpha t}x(t)\} = X(s-\alpha)$
 
-#### Derivatives
+### Derivatives
 
-- $\mathcal{L}\{\frac{d}{dx}(x(t))\} = sX(s) - x(0)$
+- $\Large \mathcal{L}\{\frac{d}{dx}(x(t))\} = sX(s) - x(0)$
 
-#### Integrals
+### Integrals
 
-- $\mathcal{L}\{\int_{0}^{t}x(\tau)\:d\tau\} = \frac{X(s)}{s}$
+- $\Large \mathcal{L}\{\int_{0}^{t}x(\tau)\:d\tau\} = \frac{X(s)}{s}$
 
-#### Convolution
+### Convolution
 
-- $\mathcal{L}\{(x*y)(t)\} = X(s)Y(s)$
+- $\Large \mathcal{L}\{(x*y)(t)\} = X(s)Y(s)$
 
-#### Initial Value Theorem
+### Initial Value Theorem
 
-- $x(0) = \lim\limits_{s \to \infty}sX(s)$
+- $\Large x(0) = \lim\limits_{s \to \infty}sX(s)$
 
-#### Final Value Theorem
+### Final Value Theorem
 
-- $\lim\limits_{t \to \infty} x(t) = \lim\limits_{s \to 0} sX(s)$
+- $\Large \lim\limits_{t \to \infty} x(t) = \lim\limits_{s \to 0} sX(s)$
 
 Condition: all poles of $sX(s)$ must have strictly negative real parts.
 
 ## Laplace Transform Table
 
-Signal $x(t)$ for $t\geq 0$ | Laplace Transform $X(s)$
+Signal $\Large x(t)$ for $t\Large \geq 0$ | Laplace Transform $\Large X(s)$ 
 ---|---
 $\Large \delta(t)$ | $\Large 1$ 
 $\Large \delta^{(n)}(t)$ | $\Large s^n$ 
