@@ -122,7 +122,7 @@ $$
 \end{cases}
 $$
 
-For convenience, we draw the magnitude as a linear transition of slope $\pm40$ dB/decade starting at $\omega=$\omega_n.
+For convenience, we draw the magnitude as a linear transition of slope $\pm40$ dB/decade starting at $\omega=\omega_n$.
 
 $$
 \Large \angle ((\frac{j\omega}{\omega_n})^2+2\zeta(\frac{\omega}{\omega_n})j+1)^{\pm1} = \pm tan^{-1}(\frac{2\zeta\frac{\omega}{\omega_n}}{1-(\frac{\omega}{\omega_n})^2}) \\[15pt]
