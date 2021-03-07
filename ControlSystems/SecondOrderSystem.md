@@ -81,7 +81,7 @@ $$
 
 **Peak time** is the time at which the maximum value is reached.
 $$
-\Large t_p = \frac{\pi}{\omega_d} = \frac{\pi\zeta}{\sqrt{1-\zeta^2}}
+\Large t_p = \frac{\pi}{\omega_d} = \frac{\pi}{\omega_n\sqrt{1-\zeta^2}}
 $$
 
 ### Peak Value, $M_p$
