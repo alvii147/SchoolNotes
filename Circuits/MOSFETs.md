@@ -94,7 +94,7 @@ $$
 \huge
 V_{SG} \gt |V_{tp}| \\[15pt]
 \huge
-V_{SD} \gt V_{SD} - |V_{tp}|
+V_{SD} \gt V_{SG} - |V_{tp}|
 $$
 
 ### Equations:
