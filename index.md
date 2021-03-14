@@ -8,7 +8,7 @@ Related to: **ECE 340**
 
 Related to: **ECE 340**
 
-<a href = "Communications/AnalogCommunication.html">![](https://img.shields.io/badge/Communications-AnalogCommunication-red)</a>
+<a href = "AnalogCommunication/Energy&Power.html">![](https://img.shields.io/badge/Analog%20Communication-Energy%20&%20Power-red)</a>
 
 Related to: **ECE 318**
 
