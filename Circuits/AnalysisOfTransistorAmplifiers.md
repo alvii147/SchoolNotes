@@ -2,7 +2,7 @@
 
 ## Frequency Response Graph
 
-![Frequency Response Graph](img/AnalysisofTransistorAmplifiers/FrequencyResponse.png)
+![Frequency Response Graph](img/AnalysisOfTransistorAmplifiers/FrequencyResponse.png)
 
 ### Notes
 
@@ -44,7 +44,7 @@
 
 ## Miller Theorem
 
-![Miller Theorem](img/AnalysisofTransistorAmplifiers/MillerTheorem.png)
+![Miller Theorem](img/AnalysisOfTransistorAmplifiers/MillerTheorem.png)
 $$
 \Large R_{M1} = \frac{R}{1-K},\:\:\:R_{M2} = \frac{RK}{K-1} \\[15pt]
 \Large K = \frac{V_2}{V_1}
