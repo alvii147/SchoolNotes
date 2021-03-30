@@ -58,3 +58,9 @@ $$
 \Large b_i = \frac{1}{a_{n - 1}}(a_{n - 1}a_{n - i - 1} - a_na_{n - 2i - 1}) \\[20pt]
 \Large c_i = \frac{1}{b_1}(b_1a_{n - i - 2} - a_{n - 1}b_{i + 1})
 $$
+The number of sign changes in the second column of the table indicates the number of roots that are in the open left hand plane. All roots are in the open left hand plane if and only if there are no sign changes in the second column (i.e. either all entries are positive, or all entries are negative). In other words, the system described above is stable if and only if
+$$
+\Large a_n \gt 0, \:\:\:\: a_{n - 1} \gt 0, \:\:\:\: b_1 \gt 0, \:\:\:\: c_1 \gt 0, ... \\[10pt]
+\text{OR} \\[10pt]
+\Large a_n \lt 0, \:\:\:\: a_{n - 1} \lt 0, \:\:\:\: b_1 \lt 0, \:\:\:\: c_1 \lt 0, ...
+$$
