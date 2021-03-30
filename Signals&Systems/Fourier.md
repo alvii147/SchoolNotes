@@ -152,7 +152,7 @@ $\Large e^{-\alpha |t|},\:[\alpha>0]$ | $\Large \frac{2\alpha}{\alpha^2+\omega^2
 $\Large e^{-\alpha t^2}$ | $\Large \sqrt{\frac{\pi}{\alpha}}e^{\frac{-\omega^2}{4\alpha}}$ | $\Large \sqrt{\frac{\pi}{\alpha}}e^{\frac{-(2\pi f)^2}{4\alpha}}$ 
 $\Large te^{-\alpha t}u(t),\:[\alpha>0]$ | $\Large \frac{1}{(\alpha+j\omega)^2}$ | $\Large \frac{1}{(\alpha+j2\pi f)^2}$ 
 $\Large t^ne^{-\alpha t}u(t),\:[\alpha>0]$ | $\Large \frac{n!}{(\alpha+j\omega)^{n+1}}$ | $\Large \frac{n!}{(\alpha+j2\pi ft)^{n+1}}$ 
-$\Large \sum\limits_{n=-\infty}^{\infty}\delta(t-nT_0)$ | $\Large \omega_0\sum\limits_{n=-\infty}^{\infty}\delta(\omega-n\omega_0),\:\omega_0=\frac{2\pi}{T_0}$ | $\Large \frac{1}{T_0}\sum\limits_{n=-\infty}^{\infty}\delta(f-\frac{n}{T_0})$ 
+$\Large \sum\limits_{n=-\infty}^{\infty}\delta(t-nT_0)$ | $\Large \omega_0\sum\limits_{n=-\infty}^{\infty}\delta(\omega-n\omega_0)$ | $\Large f_0\sum\limits_{n=-\infty}^{\infty}\delta(f-nf_0)$ 
 
 *$\Large  sinc(t) = \frac{sin(\pi t)}{\pi t}$
 
