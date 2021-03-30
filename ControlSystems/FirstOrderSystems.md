@@ -1,4 +1,4 @@
-# First Order System
+# First Order Systems
 
 ## Transfer function
 

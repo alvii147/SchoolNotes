@@ -1,4 +1,4 @@
-# Second Order System
+# Second Order Systems
 
 ## Transfer Function
 
