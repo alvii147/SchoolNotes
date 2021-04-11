@@ -15,6 +15,8 @@ $$
 
 # Bode Plots
 
+<a href = "http://www.onmyphd.com/?p=bode.plot.online.generator">![](https://img.shields.io/badge/Bode%20Plot%20Calculator-blue)</a>
+
 ## Constant
 
 Let $H(s) = K_0$. Then,
@@ -39,7 +41,7 @@ $$
 \Large \angle 10^2 = 2\angle 10 = 0
 $$
 
-![Constant bode plot](img/BodePlots/constant_dark.png)
+![Constant Bode plot](img/BodePlots/constant_dark.png)
 
 ### Bode Plot for $\large \frac{1}{10}$:
 
@@ -51,7 +53,7 @@ $$
 \Large \angle \frac{1}{10} = 0
 $$
 
-![Constant bode plot](img/BodePlots/constant2_dark.png)
+![Constant Bode plot](img/BodePlots/constant2_dark.png)
 
 ## Zeros & Poles At Origin
 
@@ -74,7 +76,7 @@ $$
 \Large \angle (j\omega)^2 = \pi
 $$
 
-![Zero/pole at origin bode plot](img/BodePlots/zeros&polesatorigin_dark.png)
+![Zero/pole at origin Bode plot](img/BodePlots/zeros&polesatorigin_dark.png)
 
 ### Bode Plot for $\large s^{-1}$:
 
@@ -86,7 +88,7 @@ $$
 \Large \angle (jw)^{-1} = -\frac{\pi}{2}
 $$
 
-![Zero/pole at origin bode plot](img/BodePlots/zeros&polesatorigin2_dark.png)
+![Zero/pole at origin Bode plot](img/BodePlots/zeros&polesatorigin2_dark.png)
 
 ## Real Zeros & Poles
 
@@ -129,7 +131,7 @@ $$
 \end{cases}
 $$
 
-![Real zeros and poles bode plot](img/BodePlots/realzeros&poles_dark.png)
+![Real zeros and poles Bode plot](img/BodePlots/realzeros&poles_dark.png)
 
 ### Bode Plot for $\large (\frac{s}{z} + 1)^{-1}$:
 
@@ -148,7 +150,7 @@ $$
 \end{cases}
 $$
 
-![Real zeros and poles bode plot](img/BodePlots/realzeros&poles2_dark.png)
+![Real zeros and poles Bode plot](img/BodePlots/realzeros&poles2_dark.png)
 
 ## Complex Zeros & Poles
 

@@ -53,7 +53,7 @@ Lag compensation **approximates a PI controller**, is used to **boost the DC gai
 
 Steps to design a lead compensator under given specifications:
 
-1. Choose $\large K_c$ to meet the phase margin specification (with $10^\circ$ buffer) by moving $\omega_{cg}$ to the left
+1. Choose $\large K_c$ to meet the phase margin specification (with $10^\circ$ buffer) by moving $\large \omega_{cg}$ to the left
 2. Find the low frequency gain of $\large K_cP(s)$, and determine how much extra gain $\large \beta$ is needed for tracking specification
 3. Choose $\large z = \beta p$ to be one decade below $\large \omega_{cg}$ of $\large K_cP(s)$
 4. Choose $\large p = \frac{z}{\beta}$

@@ -35,3 +35,5 @@
 <a href = "ControlSystems/ReferenceTracking.html">![](https://img.shields.io/badge/Control%20Systems-Reference%20Tracking-blue)</a>
 
 <a href = "ControlSystems/RootLocus.html">![](https://img.shields.io/badge/Control%20Systems-Root%20Locus-blue)</a>
+
+<a href = "ControlSystems/Lead&LagCompensators.html">![](https://img.shields.io/badge/Control%20Systems-Lead%20&%20Lag%20Compensators-blue)</a>
