@@ -15,7 +15,7 @@ $$
 
 # Bode Plots
 
-<a href = "http://www.onmyphd.com/?p=bode.plot.online.generator">![](https://img.shields.io/badge/Bode%20Plot%20Calculator-blue)</a>
+<a href = "http://www.onmyphd.com/?p=bode.plot.online.generator" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Bode%20Plot%20Calculator-blue)</a>
 
 ## Constant
 

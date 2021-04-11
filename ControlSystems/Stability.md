@@ -36,7 +36,7 @@ $$
 
 ## Routh-Hurwitz Test
 
-<a href = "https://routhhurwitz.herokuapp.com/">![](https://img.shields.io/badge/-Routh%20Hurwitzh%20Table%20Calculator-blue)</a>
+<a href = "https://routhhurwitz.herokuapp.com/" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/-Routh%20Hurwitzh%20Table%20Calculator-blue)</a>
 
 For a system with $D(s)$ such that,
 $$
