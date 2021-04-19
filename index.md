@@ -20,6 +20,14 @@
 
 <a href = "Circuits/AnalysisOfTransistorAmplifiers.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Circuits-Analysis%20Of%20Transistor%20Amplifiers-brightgreen)</a>
 
+<a href = "Circuits/IntegratedCircuitAmplifiers.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Circuits-Integrated%20Circuit%20Amplifiers-brightgreen)</a>
+
+
+
+## ECE 375
+
+<a href = "ElectromagneticWaves/MaxwellsEquations.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Maxells%20Equations-yellow)</a>
+
 
 
 ## ECE 380
