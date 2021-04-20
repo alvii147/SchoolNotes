@@ -77,7 +77,7 @@ $$
 <img src = "img/IntegratedCircuitAmplifiers/MOSDifferentialPairLargeSignal.png" width = "500">
 $$
 \Large i_{D1} = \frac{I}{2} + \sqrt{k_nI}\Bigg(\frac{v_{id}}{2}\Bigg) \sqrt{1 - \frac{(v_{id}/2)^2}{I/k_n}} \\[10pt]
-\Large i_{D1} = \frac{I}{2} - \sqrt{k_nI}\Bigg(\frac{v_{id}}{2}\Bigg) \sqrt{1 - \frac{(v_{id}/2)^2}{I/k_n}}
+\Large i_{D2} = \frac{I}{2} - \sqrt{k_nI}\Bigg(\frac{v_{id}}{2}\Bigg) \sqrt{1 - \frac{(v_{id}/2)^2}{I/k_n}}
 $$
 
 ### Small Signal Operation
