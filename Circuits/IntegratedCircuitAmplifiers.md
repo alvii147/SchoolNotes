@@ -106,6 +106,7 @@ $$
 ### Large Signal Operation
 
 $$
+\Large v_{id} = v_{B1} - v_{B2} \\[15pt]
 \Large I_{E1} = \frac{I}{1 + e^{-v_{id}/V_T}} \\[25pt]
 \Large I_{E2} = \frac{I}{1 + e^{v_{id}/V_T}}
 $$
