@@ -1,4 +1,4 @@
-# UWaterloo ECE Notes
+# ECE Notes
 
 
 
@@ -47,3 +47,5 @@
 <a href = "ControlSystems/RootLocus.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Root%20Locus-blue)</a>
 
 <a href = "ControlSystems/Lead&LagCompensators.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Lead%20&%20Lag%20Compensators-blue)</a>
+
+<a href = "ControlSystems/NyquistPlots.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Nyquist%20Plots-blue)</a>
