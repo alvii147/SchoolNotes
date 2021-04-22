@@ -40,7 +40,7 @@ $$
 
 For a system with $D(s)$ such that,
 $$
-\Large D(s) = s^n + a_{n-1}s^{n-1} +\:...\:+ a_1s + a_0
+\Large D(s) = a_ns^n + a_{n-1}s^{n-1} +\:...\:+ a_1s + a_0
 $$
 We can construct a Routh array:
 

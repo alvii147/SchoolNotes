@@ -74,9 +74,9 @@ Contour $\large C_2$ consists of points $\large s = -j \omega$ where $\large \om
 
 ### Contour $C_3$
 
-Contour $\large C_3$ consists of points in the semicircle  $\large s = \epsilon e^{j \theta}$, where $\large \epsilon \to \infty$,  and $\large \theta$ goes from $\large 90^{\circ}$ to $\large -90^{\circ}$. $\large L(C_3)$ contains points of the form $\large L(\epsilon e^{j \theta})$. Since $\large epsilon$ is infinite, the term in $\large L(\epsilon e^{j \theta})$ with the highest power of $\large \epsilon$ will dominate.
+Contour $\large C_3$ consists of points in the semicircle  $\large s = \epsilon e^{j \theta}$, where $\large \epsilon \to \infty$,  and $\large \theta$ goes from $\large 90^{\circ}$ to $\large -90^{\circ}$. $\large L(C_3)$ contains points of the form $\large L(\epsilon e^{j \theta})$. Since $\large \epsilon$ is infinite, the term in $\large L(\epsilon e^{j \theta})$ with the highest power of $\large \epsilon$ will dominate.
 
-**If $\large L(s)$ is strictly proper, $large L(C_3) = 0$.**
+**If $\large L(s)$ is strictly proper, $\large L(C_3) = 0$.**
 
 **If $\large L(s)$ is proper, (but not strictly proper), $\large L(C_3)$ is a constant**
 

@@ -8,7 +8,7 @@ The transfer function from $r$ to $y$ is:
 $$
 \Large T_{ry}(s) = \frac{Y(s)}{R(s)} = \frac{P(s)C(s)}{1+P(s)C(s)}
 $$
-We can write $P(s)C(S)$ as:
+We can write $P(s)C(s)$ as:
 $$
 \Large P(s)C(s) = \frac{a(s)}{s^q b(s)}
 $$
