@@ -56,7 +56,7 @@ where $p_1, p_2,...,p_n$ and $z_1, z_2,...,z_m$ are the zeros and poles respecti
 
 ## Rules for Plotting Negative Root Locus
 
-### The positive root locus is the set of all points $s$ in the complex plane for which $\angle L(s) = 2l\pi$ radians (where $l$ is an integer).
+### The negative root locus is the set of all points $s$ in the complex plane for which $\angle L(s) = 2l\pi$ radians (where $l$ is an integer).
 
 ### Rule 1.
 
@@ -64,7 +64,7 @@ The $n$ branches begin at the open loop poles (when $K = 0$). Of the $n$ branche
 
 ### Rule 2.
 
-The positive root locus contains all points on the real axis that are to the **left of an even number of zeros and poles.**
+The negative root locus contains all points on the real axis that are to the **left of an even number of zeros and poles.**
 
 ### Rule 3.
 
