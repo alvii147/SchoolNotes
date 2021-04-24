@@ -8,7 +8,7 @@
 
 <a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-important)</a>
 
-<a href = "AnalogCommunication/Autocorrelation&Crosscorrelation.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Analog%20Communication-Autocorrelation%20&%20Crosscorrelation-red)</a>
+<a href = "AnalogCommunication/Autocorrelation&Crosscorrelation.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Analog%20Communication-Autocorrelation%20&%20Crosscorrelation-pink)</a>
 
 
 
@@ -49,3 +49,13 @@
 <a href = "ControlSystems/Lead&LagCompensators.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Lead%20&%20Lag%20Compensators-blue)</a>
 
 <a href = "ControlSystems/NyquistPlots.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Nyquist%20Plots-blue)</a>
+
+
+
+## ECON 102
+
+<a href = "Economics/GrowthRates.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Growth%20Rates-darkred)</a>
+
+<a href = "Economics/TimeSeriesComponents.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Time%20Series%20Components-darkred)</a>
+
+<a href = "Economics/IndexNumbers.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Index%20Numbers-darkred)</a>
