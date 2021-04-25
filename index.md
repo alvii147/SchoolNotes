@@ -59,3 +59,11 @@
 <a href = "Economics/TimeSeriesComponents.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Time%20Series%20Components-darkred)</a>
 
 <a href = "Economics/IndexNumbers.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Index%20Numbers-darkred)</a>
+
+<a href = "Economics/RealGDP.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Real%20GDP-darkred)</a>
+
+<a href = "Economics/Inflation.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Inflation-darkred)</a>
+
+<a href = "Economics/Unemployment.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Unemployment-darkred)</a>
+
+<a href = "Economics/Inequality.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Inequality-darkred)</a>
