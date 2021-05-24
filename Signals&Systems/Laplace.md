@@ -42,14 +42,15 @@ Condition: all poles of $sX(s)$ must have strictly negative real parts.
 
 ## Laplace Transform Table
 
-Signal $\Large x(t)$ for $t\Large \geq 0$ | Laplace Transform $\Large X(s)$ 
+Signal $\Large x(t)$ for $\Large t \geq 0$ | Laplace Transform $\Large X(s)$ 
 ---|---
 $\Large \delta(t)$ | $\Large 1$ 
 $\Large \delta^{(n)}(t)$ | $\Large s^n$ 
-$\Large u(t)$ | $\Large \frac{1}{s}$ 
-$\Large t^n$ | $\Large \frac{n!}{s^{n+1}}$ 
+$\Large u(t)$ | $\huge\frac{1}{s}$ 
+$\Large t^n$ | $\huge\frac{n!}{s^{n+1}}$ 
 $\Large e^{\alpha t}f(t)$ | $\Large F(s-\alpha)$ 
-$\Large e^{\alpha t}$  | $\Large \frac{n!}{(s-\alpha)^{n+1}}$ 
-$\Large sin(\omega_0t)$ | $\Large \frac{\omega_0}{s^2+\omega_0^2}$ 
-$\Large cos(\omega_0t)$ | $\Large \frac{s}{s^2+\omega_0^2}$ 
-
+$\Large e^{\alpha t}$  | $\huge\frac{n!}{(s-\alpha)^{n+1}}$ 
+$\Large sin(\omega_0t)$ | $\huge \frac{\omega_0}{s^2+\omega_0^2}$ 
+$\Large cos(\omega_0t)$ | $\huge\frac{s}{s^2+\omega_0^2}$ 
+$\Large e^{\alpha t}sin(\omega_0 t)$ | $\huge\frac{\omega_0}{(s-\alpha)^2+\omega_0^2}$ 
+$\Large e^{\alpha t}cos(\omega_0 t)$ | $\huge\frac{s-\alpha}{(s-\alpha)^2+\omega_0^2}$ 
