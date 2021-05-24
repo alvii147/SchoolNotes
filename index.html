@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>index</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -66,7 +67,7 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -91,6 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -137,11 +139,12 @@ code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
 .html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
+#math-inline-preview-content { zoom: 1.1; }
 .MathJax_SVG * { transition: none 0s ease 0s; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
@@ -154,7 +157,8 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
@@ -162,6 +166,50 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
 .md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 
 
 :root {
@@ -1090,7 +1138,7 @@ input {
 
 #write>p:first-child:not(:only-child)::before,
 #write>p:only-child::before {
-    background: url("file:///C://Users//User//AppData//Roaming//Typora/themes/cobalt/splash.png") no-repeat 45% 90% transparent;
+    background: url("file:///C://Users//zzaman//AppData//Roaming//Typora/themes/cobalt/splash.png") no-repeat 45% 90% transparent;
     background-size: cover;
     bottom: 0;
     content: '';
@@ -1109,10 +1157,10 @@ input {
     opacity: 1;
 }
 
-
-</style>
+ :root {--mermaid-font-zoom:1em ;} 
+</style><title>index</title>
 </head>
-<body class='typora-export os-windows'>
-<div id='write'  class=''><h1><a name="ece-notes" class="md-header-anchor"></a><span>ECE Notes</span></h1><p>&nbsp;</p><h2><a name="ece-318" class="md-header-anchor"></a><span>ECE 318</span></h2><p><a href = "Signals&Systems/Fourier.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Fourier-important" referrerpolicy="no-referrer"></a></p><p><a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&amp;%20Power-important" referrerpolicy="no-referrer"></a></p><p><a href = "AnalogCommunication/Autocorrelation&Crosscorrelation.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Analog%20Communication-Autocorrelation%20&amp;%20Crosscorrelation-pink" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2><a name="ece-340" class="md-header-anchor"></a><span>ECE 340</span></h2><p><a href = "Circuits/BJTs.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-BJTs-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/MOSFETs.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-MOSFETs-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/AnalysisOfTransistorAmplifiers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-Analysis%20Of%20Transistor%20Amplifiers-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/IntegratedCircuitAmplifiers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-Integrated%20Circuit%20Amplifiers-brightgreen" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2><a name="ece-375" class="md-header-anchor"></a><span>ECE 375</span></h2><p><a href = "ElectromagneticWaves/MaxwellsEquations.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Electromagnetic%20Waves-Maxells%20Equations-yellow" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2><a name="ece-380" class="md-header-anchor"></a><span>ECE 380</span></h2><p><a href = "Signals&Systems/Laplace.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Laplace-important" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/BodePlots.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Bode%20Plots-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/FirstOrderSystems.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-First%20Order%20Systems-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/SecondOrderSystems.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Second%20Order%20Systems-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/Stability.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Stability-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/ReferenceTracking.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Reference%20Tracking-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/RootLocus.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Root%20Locus-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/Lead&LagCompensators.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Lead%20&amp;%20Lag%20Compensators-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/NyquistPlots.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Nyquist%20Plots-blue" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2><a name="econ-102" class="md-header-anchor"></a><span>ECON 102</span></h2><p><a href = "Economics/GrowthRates.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Growth%20Rates-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/TimeSeriesComponents.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Time%20Series%20Components-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/IndexNumbers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Index%20Numbers-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/RealGDP.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Real%20GDP-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Inflation.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Inflation-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Unemployment.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Unemployment-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Inequality.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Inequality-darkred" referrerpolicy="no-referrer"></a></p></div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='ece-notes'><span>ECE Notes</span></h1><p>&nbsp;</p><h2 id='ece-318'><span>ECE 318</span></h2><p><a href = "Signals&Systems/FourierSeries&Transforms.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Fourier%20Series%20&amp;%20Transforms-important" referrerpolicy="no-referrer"></a></p><p><a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&amp;%20Power-important" referrerpolicy="no-referrer"></a></p><p><a href = "AnalogCommunication/Autocorrelation&Crosscorrelation.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Analog%20Communication-Autocorrelation%20&amp;%20Crosscorrelation-pink" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2 id='ece-340'><span>ECE 340</span></h2><p><a href = "Circuits/BJTs.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-BJTs-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/MOSFETs.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-MOSFETs-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/AnalysisOfTransistorAmplifiers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-Analysis%20Of%20Transistor%20Amplifiers-brightgreen" referrerpolicy="no-referrer"></a></p><p><a href = "Circuits/IntegratedCircuitAmplifiers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Circuits-Integrated%20Circuit%20Amplifiers-brightgreen" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2 id='ece-375'><span>ECE 375</span></h2><p><a href = "ElectromagneticWaves/MaxwellsEquations.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Electromagnetic%20Waves-Maxells%20Equations-yellow" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2 id='ece-380'><span>ECE 380</span></h2><p><a href = "Signals&Systems/LaplaceTransforms.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Signals%20%26%20Systems-Laplace%20Transforms-orange" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/BodePlots.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Bode%20Plots-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/FirstOrderSystems.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-First%20Order%20Systems-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/SecondOrderSystems.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Second%20Order%20Systems-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/Stability.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Stability-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/ReferenceTracking.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Reference%20Tracking-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/RootLocus.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Root%20Locus-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/Lead&LagCompensators.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Lead%20&amp;%20Lag%20Compensators-blue" referrerpolicy="no-referrer"></a></p><p><a href = "ControlSystems/NyquistPlots.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Control%20Systems-Nyquist%20Plots-blue" referrerpolicy="no-referrer"></a></p><p>&nbsp;</p><h2 id='econ-102'><span>ECON 102</span></h2><p><a href = "Economics/GrowthRates.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Growth%20Rates-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/TimeSeriesComponents.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Time%20Series%20Components-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/IndexNumbers.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Index%20Numbers-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/RealGDP.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Real%20GDP-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Inflation.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Inflation-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Unemployment.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Unemployment-darkred" referrerpolicy="no-referrer"></a></p><p><a href = "Economics/Inequality.html" target = "_blank" rel = "noopener noreferrer"><img src="https://img.shields.io/badge/Economics-Inequality-darkred" referrerpolicy="no-referrer"></a></p></div></div>
 </body>
 </html>

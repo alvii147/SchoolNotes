@@ -4,7 +4,7 @@
 
 ## ECE 318
 
-<a href = "Signals&Systems/Fourier.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Fourier-important)</a>
+<a href = "Signals&Systems/FourierSeries&Transforms.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Fourier%20Series%20&%20Transforms-important)</a>
 
 <a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-important)</a>
 
@@ -32,7 +32,7 @@
 
 ## ECE 380
 
-<a href = "Signals&Systems/Laplace.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Laplace-important)</a>
+<a href = "Signals&Systems/LaplaceTransforms.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Laplace%20Transforms-orange)</a>
 
 <a href = "ControlSystems/BodePlots.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Control%20Systems-Bode%20Plots-blue)</a>
 
