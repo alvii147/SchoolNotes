@@ -38,6 +38,8 @@
 
 ## ECE 375
 
+<a href = "ElectromagneticWaves/SteadyStateWaves.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Steady%20State%20Waves-yellow)</a>
+
 <a href = "ElectromagneticWaves/MaxwellsEquations.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Maxells%20Equations-yellow)</a>
 
 
