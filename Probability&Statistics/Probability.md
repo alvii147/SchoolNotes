@@ -23,14 +23,14 @@ $$
 
 **Independent events** are events such that their outcomes are independent of one another.
 $$
-\Large E_1 \text{ & } E_2 \text{ are independent } \implies P(E_1 \cap E_2) = P(E_1) \times P(E_2)
+\Large E_1 \text{ \& } E_2 \text{ are independent } \implies P(E_1 \cap E_2) = P(E_1) \times P(E_2)
 $$
 
 ## Mutually Exclusive Events
 
 **Mutually exclusive events** are events that cannot occur at the same time.
 $$
-\Large E_1 \text{ & } E_2 \text{ are mutually exclusive } \implies P(E_1 \cup E_2) = P(E_1) + P(E_2)
+\Large E_1 \text{ \& } E_2 \text{ are mutually exclusive } \implies P(E_1 \cup E_2) = P(E_1) + P(E_2)
 $$
 
 ## Probability Axioms

@@ -57,6 +57,13 @@ $$
 \Large {}^4C_3 = \frac{4!}{3!\:(4 - 3)!} = 4
 $$
 
+### Additional Identities
+
+$$
+\Large \binom{n}{r} = \binom{n - 1}{r - 1} + \binom{n - 1}{r} \\[15pt]
+\Large \binom{n}{r} = \binom{n}{n - r}
+$$
+
 ## Combinations with Repetition
 
 **Combinations with repetition** refers to the number of ways to choose $\large r$ elements from a pool of $\large n$ elements such that there may be repetitions.
@@ -64,7 +71,7 @@ $$
 ### Formula
 
 $$
-\Large \Bigg(\!\!\binom{n}{r}\!\!\Bigg) = \binom{n + r - 1}{r} = \frac{(n + r - 1)!}{r!\:(n - 1)!}
+\Large \bigg(\!\!\!\binom{n}{r}\!\!\!\bigg) = \binom{n + r - 1}{r} = \frac{(n + r - 1)!}{r!\:(n - 1)!}
 $$
 
 ### Example
@@ -73,7 +80,7 @@ There are 10 ways to place 2 balls into 4 different boxes:
 
 4 ways where both balls are in the same box, 6 other ways to choose 2 different boxes from 4.
 $$
-\Large \Bigg(\!\!\binom{4}{2}\!\!\Bigg) = \frac{5!}{2!\:3!} = 10
+\Large \bigg(\!\!\!\binom{4}{2}\!\!\!\bigg) = \frac{5!}{2!\:3!} = 10
 $$
 
 ## Binomial Theorem
@@ -83,7 +90,7 @@ $$
 ### Formula
 
 $$
-\Large (x + y)^n = \sum\limits^n_{k = 0} x^k y^{n - k}
+\Large (x + y)^n = \sum\limits^n_{k = 0} \binom{n}{k} x^k y^{n - k}
 $$
 
 ## Multinomial Coefficients
@@ -98,7 +105,7 @@ $$
 
 ## Multinomial Theorem
 
-**Multinomial theorem describes the algebraic expansion of powers of a multinomial of the form $\large (x_1 + x_2 + x_3 + ... + x_r)^n$.
+**Multinomial theorem** describes the algebraic expansion of powers of a multinomial of the form $\large (x_1 + x_2 + x_3 + ... + x_r)^n$.
 
 ### Formula
 
