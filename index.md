@@ -1,8 +1,8 @@
-# ECE Notes
+# uWaterloo School Notes
 
 
 
-## ECE 203
+## ECE 203 - Probability Theory & Statistics 1
 
 <a href = "Probability&Statistics/Combinations&Permutations.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Combinations%20%26%20Permutations-cyan)</a>
 
@@ -10,7 +10,7 @@
 
 
 
-## ECE 207
+## ECE 207 -  Signals & Systems
 
 <a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-orange)</a>
 
@@ -22,17 +22,23 @@
 
 
 
-## ECE 318
+## ECE 260 - Electromechanical Energy Conversion
 
-<a href = "Signals&Systems/FourierSeries&Transforms.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Fourier%20Series%20&%20Transforms-orange)</a>
+<a href = "PowerSystems/ACPower.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20Systems-AC%20Power-goldenrod)</a>
+
+
+
+## ECE 318 -  Communication Systems 1
 
 <a href = "Signals&Systems/Energy&Power.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-orange)</a>
+
+<a href = "Signals&Systems/FourierSeries&Transforms.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Fourier%20Series%20&%20Transforms-orange)</a>
 
 <a href = "AnalogCommunication/Autocorrelation&Crosscorrelation.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Analog%20Communication-Autocorrelation%20&%20Crosscorrelation-pink)</a>
 
 
 
-## ECE 340
+## ECE 340 - Electronic Circuits 2
 
 <a href = "Circuits/BJTs.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Circuits-BJTs-brightgreen)</a>
 
@@ -44,7 +50,7 @@
 
 
 
-## ECE 375
+## ECE 375 - Electromagnetic Fields & Waves
 
 <a href = "ElectromagneticWaves/SteadyStateWaves.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Steady%20State%20Waves-yellow)</a>
 
@@ -52,7 +58,7 @@
 
 
 
-## ECE 380
+## ECE 380 -  Analog Control Systems
 
 <a href = "Signals&Systems/LaplaceTransforms.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Laplace%20Transforms-orange)</a>
 
@@ -74,7 +80,7 @@
 
 
 
-## ECON 102
+## ECON 102 - Introduction to Macroeconomics
 
 <a href = "Economics/GrowthRates.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Economics-Growth%20Rates-darkred)</a>
 
