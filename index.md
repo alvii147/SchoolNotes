@@ -24,7 +24,7 @@
 
 ## ECE 260 - Electromechanical Energy Conversion
 
-<a href = "PowerSystems/ACPower.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Signals%20Systems-AC%20Power-goldenrod)</a>
+<a href = "PowerSystems/ACPower.html" target = "_blank" rel = "noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
 
 
 
