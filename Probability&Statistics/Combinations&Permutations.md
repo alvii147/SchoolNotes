@@ -14,7 +14,7 @@ $$
 
 There are 12, 3-letter words that can be generated from the letters of the word **FART**:
 
-FA, AF, FR, RF, FT, TF, AR, RA, AT, TA, RT, TR
+*FA, AF, FR, RF, FT, TF, AR, RA, AT, TA, RT, TR*
 $$
 \Large {}^4P_2 = \frac{4!}{(4 - 2)!} = 12
 $$
@@ -33,7 +33,7 @@ $$
 
 There are 8 possible arrangements of 1s and 0s in a 3-digit binary number:
 
-000, 001, 010, 011, 100, 101, 110, 111.
+*000, 001, 010, 011, 100, 101, 110, 111.*
 $$
 \Large 2^3 = 8
 $$
@@ -52,7 +52,7 @@ $$
 
 There are 4, 3-letter combinations that can be generated from the letters of the word **FART**:
 
-FAR, FRT, FAT, ART.
+*FAR, FRT, FAT, ART.*
 $$
 \Large {}^4C_3 = \frac{4!}{3!\:(4 - 3)!} = 4
 $$
