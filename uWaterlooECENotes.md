@@ -1,4 +1,4 @@
-# uWaterloo School Notes
+# uWaterloo ECE Notes
 
 
 
