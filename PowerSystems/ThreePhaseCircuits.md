@@ -58,7 +58,7 @@ To convert from Y to Δ, multiply the impedances by 3, and to convert from Δ to
 
 ## Power
 
-The **active power** $\large P_{3\phi}$, **reactive power** $\large Q_{3\phi}$, **complex power** $\large S_{3\phi}$ and **power factor** $\large pf_{3\phi}$ for three-phase circuits are given by:
+The **active power** $\large P_{3\phi}$, **reactive power** $\large Q_{3\phi}$, **apparent power** $\large S_{3\phi}$ and **power factor** $\large pf_{3\phi}$ for three-phase circuits are given by:
 $$
 \huge P_{3\phi} = 3 \abs{V_{phase}} \abs{I_{phase}} \: cos \phi \\[5pt]
 \huge P_{3\phi} = \sqrt{3} \abs{V_{line}} \abs{I_{line}} \: cos \phi \\[5pt]

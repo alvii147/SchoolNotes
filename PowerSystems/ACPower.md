@@ -30,7 +30,7 @@ Then, the **apparent power** $\large \vec{S}$ of the system is given by:
 $$
 \Large \vec{S} = P + jQ = \vec{V} \vec{I}^*
 $$
-where $\large P$ and $\large Q$ are the **real power** and **reactive power** respectively. They are given by:
+where $\large P$ and $\large Q$ are the **active power** and **reactive power** respectively. They are given by:
 $$
 \Large P = \frac{V_m I_m}{2} cos(\phi) = V_{rms} \: I_{rms} \: cos(\phi) \\[15pt]
 \Large Q = \frac{V_m I_m}{2} sin(\phi) = V_{rms} \: I_{rms} \: sin(\phi)
