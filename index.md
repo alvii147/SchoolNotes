@@ -30,6 +30,14 @@
 
 
 
+## ECE 360 - Power Systems and Smart Grids
+
+<a href="PowerSystems/ACPower" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
+
+<a href="PowerSystems/ThreePhaseCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Three%20Phase%20Circuits-goldenrod)</a>
+
+
+
 ## ECE 318 -  Communication Systems 1
 
 <a href="Signals&Systems/Energy&Power" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-orange)</a>
