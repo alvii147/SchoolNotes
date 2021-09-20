@@ -30,6 +30,10 @@
 
 <a href="PowerSystems/ThreePhaseCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Three%20Phase%20Circuits-goldenrod)</a>
 
+<a href="PowerSystems/MagneticCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Magnetic%20Circuits-goldenrod)</a>
+
+<a href="PowerSystems/Transformers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Transformers-goldenrod)</a>
+
 
 
 ## ECE 307 - Probability Theory & Statistics 2
@@ -69,6 +73,10 @@
 <a href="PowerSystems/ACPower" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
 
 <a href="PowerSystems/ThreePhaseCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Three%20Phase%20Circuits-goldenrod)</a>
+
+<a href="PowerSystems/MagneticCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Magnetic%20Circuits-goldenrod)</a>
+
+<a href="PowerSystems/Transformers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Transformers-goldenrod)</a>
 
 
 
