@@ -8,6 +8,8 @@
 
 <a href="Probability&Statistics/Probability" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Probability-cyan)</a>
 
+<a href="Probability&Statistics/DiscreteRandomVariables" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Discrete%20Random%20Variables-cyan)</a>
+
 
 
 ## ECE 207 -  Signals & Systems
@@ -30,11 +32,13 @@
 
 
 
-## ECE 360 - Power Systems and Smart Grids
+## ECE 307 - Probability Theory & Statistics 2
 
-<a href="PowerSystems/ACPower" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
+<a href="Probability&Statistics/Combinations&Permutations" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Combinations%20%26%20Permutations-cyan)</a>
 
-<a href="PowerSystems/ThreePhaseCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Three%20Phase%20Circuits-goldenrod)</a>
+<a href="Probability&Statistics/Probability" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Probability-cyan)</a>
+
+<a href="Probability&Statistics/DiscreteRandomVariables" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Discrete%20Random%20Variables-cyan)</a>
 
 
 
@@ -57,6 +61,14 @@
 <a href="Circuits/AnalysisOfTransistorAmplifiers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Circuits-Analysis%20Of%20Transistor%20Amplifiers-brightgreen)</a>
 
 <a href="Circuits/IntegratedCircuitAmplifiers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Circuits-Integrated%20Circuit%20Amplifiers-brightgreen)</a>
+
+
+
+## ECE 360 - Power Systems and Smart Grids
+
+<a href="PowerSystems/ACPower" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
+
+<a href="PowerSystems/ThreePhaseCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Three%20Phase%20Circuits-goldenrod)</a>
 
 
 
