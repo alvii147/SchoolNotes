@@ -16,9 +16,9 @@ $$
 
 ## Cumulative Distribution Function
 
-For a random variable $\large X$, the **cumulative distribution function** $\large F(x)$ is defined as:
+For a discrete random variable $\large X$, the **cumulative distribution function** $\large F(x)$ is defined as:
 $$
-\Large F(x) = P(X \le x)
+\Large F(x) = P\{X \le x\}
 $$
 ### Properties
 
@@ -38,7 +38,7 @@ $$
 
 ### Expected Value of a Function of a Random Variable
 
-For a function $\large Y = g(X)$ of a random variable $\large X$, the expected value $\large E[Y]$ is defined as:
+For a real-valued function $\large Y = g(X)$ of a random variable $\large X$, the expected value $\large E[Y]$ is defined as:
 $$
 \Large E[Y] = E[g(X)] = \sum\limits_i g(x_i) p(x_i)
 $$
@@ -50,7 +50,7 @@ where $\large a$ and $\large b$ are constants.
 
 ## Variance
 
-For a random variable $\large X$, the **variance** $\large Var(X)$ is defined as:
+For a discrete random variable $\large X$, the **variance** $\large Var(X)$ is defined as:
 $$
 \Large \begin{align*}
 Var(X) &= E[(X - \mu)^2] \\
@@ -67,7 +67,7 @@ where $\large a$ and $\large b$ are constants.
 
 ## Standard Deviation
 
-For a random variable $\large X$, the **standard deviation** $\large SD(X)$ is defined as:
+For a discrete random variable $\large X$, the **standard deviation** $\large SD(X)$ is defined as:
 $$
 \Large SD(X) = \sqrt{Var(X)}
 $$
