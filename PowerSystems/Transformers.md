@@ -21,6 +21,5 @@ $$
 Secondary $\large \to$ Primary | Primary $\large \to$ Secondary
 --- | ---
 $\Large V_2 \to a V_2$ | $\Large V_1 \to \frac{V_1}{a}$ 
-$\Large R_2 \to a^2 R_2$ | $\Large R_1 \to \frac{R_1}{a^2}$ 
-$\Large X_2 \to a^2 X_2$ | $\Large X_1 \to \frac{X_1}{a^2}$ 
+$\Large Z_2 \to a^2 Z_2$ | $\Large Z_1 \to \frac{Z_1}{a^2}$ 
 $\Large I_2 \to \frac{I_2}{a}$ | $\Large I_1 \to a I_1$ 
