@@ -67,5 +67,5 @@ $$
 \huge S_{3\phi} = 3 V_{phase} \: I_{phase}^* \\[5pt]
 \huge \abs{S_{3\phi}} = 3 \abs{V_{phase}} \: \abs{I_{phase}} \\[5pt]
 \huge \abs{S_{3\phi}} = \sqrt{3} \abs{V_{line}} \: \abs{I_{line}} \\[5pt]
-\huge pf_{3\phi} = cos(\theta_{v_{phase}} - \theta_{i_{phase}})
+\huge pf_{3\phi} = cos \phi = cos(\theta_{v_{phase}} - \theta_{i_{phase}})
 $$
