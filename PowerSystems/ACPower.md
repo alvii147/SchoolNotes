@@ -33,7 +33,8 @@ $$
 where $\large P$ and $\large Q$ are the **active power** and **reactive power** respectively. They are given by:
 $$
 \Large P = \frac{V_m I_m}{2} cos(\phi) = V_{rms} \: I_{rms} \: cos(\phi) \\[15pt]
-\Large Q = \frac{V_m I_m}{2} sin(\phi) = V_{rms} \: I_{rms} \: sin(\phi)
+\Large Q = \frac{V_m I_m}{2} sin(\phi) = V_{rms} \: I_{rms} \: sin(\phi) \\[15pt]
+\Large \frac{Q}{P} = tan(\phi)
 $$
 where $\large \phi$ is the phase difference between voltage and current:
 $$
