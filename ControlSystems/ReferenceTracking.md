@@ -36,7 +36,7 @@ $$
 There value of $e_{ss}(t)$ affects the tracking of the reference signal and depends on the relative values of $q$ and $m$.
 
 Case | Condition | $\large e_{ss}(t)$
--- | --
+--- | --- | ---
 Perfect Tracking | $\Large q > m$ | 0
 Constant Tracking | $\Large q = m$ | $\Large \lim\limits_{s \to 0} km! \frac{b(s)}{s^q + a(s)}$
 No Tracking | $\Large q > m$ | $\Large \infty$
