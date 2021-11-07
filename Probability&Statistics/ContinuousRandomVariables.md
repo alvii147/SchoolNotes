@@ -79,7 +79,7 @@ A **uniform random variable** $\large X$ is a continuous random variable that is
 $$
 \Large f(x) = \begin{cases}
 \frac{1}{\beta - \alpha} & \text{if} \: \alpha \lt x \le \beta \\[5pt]
-0 & otherwise
+0 & \text{otherwise}
 \end{cases}
 $$
 The cumulative density function $\large F(a)$ is defined as:
@@ -101,7 +101,7 @@ $$
 
 A **normal random variable** $\large X$ is a continuous random variable that is **normally distributed** with parameters $\large \mu$ (mean) and $\large \sigma$ (standard deviation), denoted by $\large N(\mu, \sigma^2),$ with its probability density function is given by:
 $$
-\Large f(x) = \frac{1}{\sqrt{2\pi\sigma}} e^{\frac{-(x - \mu)^2}{2\sigma^2}}
+\Large f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(x - \mu)^2}{2\sigma^2}}
 $$
 
 ### Properties
