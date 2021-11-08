@@ -48,6 +48,8 @@
 
 <a href="Probability&Statistics/ContinuousRandomVariables" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Continuous%20Random%20Variables-cyan)</a>
 
+<a href="Probability&Statistics/BayesianStatistics" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Bayesian%20Statistics-cyan)</a>
+
 
 
 ## ECE 318 -  Communication Systems 1
