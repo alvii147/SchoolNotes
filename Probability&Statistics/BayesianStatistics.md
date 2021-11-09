@@ -41,6 +41,12 @@ $$
 \Large Beta(a, b) = \frac{(a + b - 1)!}{(a - 1)! (b - 1)!} \theta^{a - 1} (1 - \theta)^{b - 1}
 $$
 
+#### Properties
+
+- $\large E[X] = \frac{a}{a + b}$
+- $\large Var[X] = \frac{ab}{(a + b + 1)(a + b)^2}$
+- $\large SD[X] = \frac{\sqrt{ab}}{(a + b)\sqrt{(a + b + 1)}}$
+
 ### Normal Distribution Priors & Likelihoods
 
 A Bayesian Update Table can be constructed for events with normal distribution priors and likelihoods as follows:
