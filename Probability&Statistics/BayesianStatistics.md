@@ -33,7 +33,7 @@ Distribution Types (Prior/Likelihood) | Hypothesis | Prior | Likelihood | Bayes 
 --- | --- | --- | --- | --- | ---
 Beta/Bernoulli (on success) | $\Large \theta \in [0, 1]$ | $\Large Beta(a, b) d\theta$ | $\Large \theta$ | $\Large \theta \times Beta(a, b) d\theta$ | $\Large Beta(a + 1, b)$
 Beta/Bernoulli (on failure) | $\Large \theta \in [0, 1]$ | $\Large Beta(a, b) d\theta$ | $\Large (1 - \theta)$ | $\Large (1 - \theta) \times Beta(a, b) d\theta$ | $\Large Beta(a, b + 1)$
-Beta/Binomial | $\Large \theta \in [0, 1]$ | $\Large Beta(a, b) d\theta$ | $\Large \binom{n}{x} \theta^n (1 - \theta)^{n - x}$ | $\Large \binom{n}{x} \theta^n (1 - \theta)^{n - x} \times Beta(a, b) d\theta$ | $\Large Beta(a + n, b + n - x)$ 
+Beta/Binomial | $\Large \theta \in [0, 1]$ | $\Large Beta(a, b) d\theta$ | $\Large \binom{n}{x} \theta^n (1 - \theta)^{n - x}$ | $\Large \binom{n}{x} \theta^n (1 - \theta)^{n - x} \times Beta(a, b) d\theta$ | $\Large Beta(a + x, b + n - x)$ 
 Beta/Geometric | $\Large \theta \in [0, 1]$ | $\Large Beta(a, b) d\theta$ | $\Large \theta^x(1 - \theta)$ | $\Large \theta^x(1 - \theta) \times Beta(a, b) d\theta$ | $\Large Beta(a + x, b + 1)$
 
 where the Beta distribution is given as follows:
