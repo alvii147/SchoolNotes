@@ -16,23 +16,36 @@ where $\large \mathcal{Z}\{x[n]\}= X(z) $ is the **$\mathcal{Z}$-Transform** of 
 
 ### Time Advance
 
-- $\Large \mathcal{Z}\{x[n+N]\} = z^NX(z) - \sum\limits^{N-1}_{k=0}z^{N-k}x[k]$ 
+- $\Large \mathcal{Z}\{x[n+k]\} = z^{k}X(z)$  
 
 ### Time Delay
 
-- $\Large \mathcal{Z}\{x[n-N]\} = z^{-N}X(z) + \sum\limits^{N-1}_{k=0}z^{-k}x[k-N]$ 
+- $\Large \mathcal{Z}\{x[n-k]\} = z^{-k}X(z)$ 
 
-### Multiplication by $k$
+### Multiplication by $n$
 
 - $\Large \mathcal{Z}\{nx[n]\} = -z\frac{dX(z)}{dz}$
 
-### Multiplication by $a^k$
+### Multiplication by $a^n$
 
 - $\Large \mathcal{Z}\{a^n x[n]\} = X(\frac{z}{\alpha})$
+
+### Folding
+
+- $\Large \mathcal{Z}\{x[-n]\} = X(\frac{1}{z})$
 
 ### Convolution
 
 - $\Large \mathcal{Z}\{x*y\} = X(z)Y(z)$
+
+### Conjugation
+
+- $\Large \mathcal{Z}\{x^*[n]\} = X^*(z^*)$
+
+### Real & Imaginary Components
+
+- $\Large \mathcal{Z}\{Re\{x[n]\}\} = \frac{1}{2}[X(z) + X^*(z^*)]$
+- $\Large \mathcal{Z}\{Im\{x[n]\}\} = \frac{1}{2}[X(z) - X^*(z^*)]$
 
 ### Initial Value Theorem
 
