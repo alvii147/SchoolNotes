@@ -52,6 +52,14 @@
 
 
 
+## ECE 313 -  Digital Signal Processing
+
+<a href="Signals&Systems/ZTransforms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Z%20Transforms-orange)</a>
+
+<a href="Signals&Systems/DiscreteTimeFourierTransform" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Discrete%20Time%20Fourier%20Transform-orange)</a>
+
+
+
 ## ECE 318 -  Communication Systems 1
 
 <a href="Signals&Systems/Energy&Power" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Energy%20&%20Power-orange)</a>
