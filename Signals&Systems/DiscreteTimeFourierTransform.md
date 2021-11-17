@@ -56,4 +56,4 @@ Note that the Discrete-Time Fourier Transform is obtained by restricting the **$
 
 - $\Large \sum\limits_{n = -\infty}^\infty x_1[n] x^*_2[n] = \frac{1}{2\pi} \int_{2\pi} X_1(e^{j\omega}) X^*_2(e^{j\omega}) d\omega$
 
-- $\Large \sum\limits_{n = -\infty}^\infty \abs{x_[n]}^2 = \frac{1}{2\pi} \int_{2\pi} \abs{X(e^{j\omega})}^2 d\omega$
+- $\Large \sum\limits_{n = -\infty}^\infty \abs{x[n]}^2 = \frac{1}{2\pi} \int_{2\pi} \abs{X(e^{j\omega})}^2 d\omega$
