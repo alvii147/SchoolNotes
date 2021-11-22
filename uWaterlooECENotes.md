@@ -98,7 +98,7 @@
 
 <a href="ElectromagneticWaves/SteadyStateWaves" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Steady%20State%20Waves-yellow)</a>
 
-<a href="ElectromagneticWaves/MaxwellsEquations" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Maxells%20Equations-yellow)</a>
+<a href="ElectromagneticWaves/MaxwellsEquations" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Electromagnetic%20Waves-Maxwells%20Equations-yellow)</a>
 
 
 
