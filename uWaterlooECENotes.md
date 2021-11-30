@@ -82,6 +82,12 @@
 
 
 
+## ECE 356 - Database Systems
+
+<a href="DatabaseSystems/Normalization" target= "_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/DatabaseSystems-Normalization-slateblue)</a>
+
+
+
 ## ECE 360 - Power Systems and Smart Grids
 
 <a href="PowerSystems/ACPower" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-AC%20Power-goldenrod)</a>
