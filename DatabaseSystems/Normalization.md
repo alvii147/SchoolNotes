@@ -205,8 +205,10 @@ Given a relation $\large r$ with the set of all attributes $\large R$, $\large r
 Given a relation $\large r$ with the set of all attributes $\large R$ and a set of functional dependencies $\large F$, $\large r$ is in **third normal form** if and only if, for every functional dependency $\large \alpha \to \beta$ in $\large F$, at least one of the following is true:
 
 - $\Large \beta \sube \alpha$
-- $\Large \alpha$ is a super key for $\large R$
+- $\Large \alpha$ is a super key for $\Large R$
 - $\Large \forall_{B \in \beta - \alpha} \:\: B$ is an attribute that exists in some candidate key.
+
+Intuitively, third normal form is just enforcing a table to describe a single entity. By requiring every functional dependency to either have $\large \alpha$ as a super key or have every attribute in $\large \beta$ in at least one candidate key, it is enforcing that every attribute in this relation is a part of the same entity and cannot be neatly broken down into multiple entities.
 
 ### Third Normal Form Decomposition
 
