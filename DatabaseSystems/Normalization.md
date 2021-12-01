@@ -176,23 +176,23 @@ If $\large \alpha$ is a super key of $\large r$, and there exists no $\large \be
 
 In other words, $\large \alpha$ is a candidate key if and only if removing any attribute from $\large \alpha$ will result in it losing its super key status.
 
-## Determining Candidate Key Attributes
+### Determining Candidate Key Attributes
 
 Consider the set of all attributes $\large R$ in relation $\large r$ and a canonical cover $\large F_c$. We can make the following statements about candidate keys for $\large r$.
 
-### Required Attributes
+#### Required Present
 
 Any attribute that does not appear on the right-hand side of any functional dependency $\large f \in F_c$ **must be present** in every candidate key of $\large r$.
 
-### Required Absent 1
+#### Required Absent 1
 
 Any attribute that does not appear on the left-hand side of any functional dependency $\large f \in F_c$ but appears on the right-hand side of at least one functional dependency $\large f \in F_c$ **must be absent** in every candidate key of $\large r$.
 
-### Required Absent 2
+#### Required Absent 2
 
- Any attribute that appears on the right-hand side of any functional dependency $\large f \in F_c$ where all the attributes on the left-hand side are required, **must be absent** in every candidate key of $\large r$.
+Any attribute that appears on the right-hand side of any functional dependency $\large f \in F_c$ where all the attributes on the left-hand side are required, **must be absent** in every candidate key of $\large r$.
 
-### Maybe Present
+#### Maybe Present
 
 Any attribute that appears on the left-hand side of some functional dependency $\large f \in F_c$ and the right hand-side of some other functional dependency $\large f \in F_c$ **must be absent in at least one** candidate key of $\large r$.
 
@@ -205,12 +205,27 @@ Given a relation $\large r$ with the set of all attributes $\large R$, $\large r
 Given a relation $\large r$ with the set of all attributes $\large R$ and a set of functional dependencies $\large F$, $\large r$ is in **third normal form** if and only if, for every functional dependency $\large \alpha \to \beta$ in $\large F$, at least one of the following is true:
 
 - $\Large \beta \sube \alpha$
-- $\Large \alpha$ is a superkey for $\large R$
-- $\Large \forall_{B \in \beta - \alpha} \:\: B \in CK$ where $\Large CK$ is the set of candidate keys of $\Large r$.
+- $\Large \alpha$ is a super key for $\large R$
+- $\Large \forall_{B \in \beta - \alpha} \:\: B$ is an attribute that exists in some candidate key.
+
+### Third Normal Form Decomposition
+
+The steps for decomposing relation $r$ to multiple relations that are in third normal form are as follows:
+
+- For each functional dependency $\large (\alpha \to \beta) \in F$, create relation $\large (\alpha, \beta)$ and add it to the schema
+- If any attributes are left out, add them in a relation with a candidate key
+- Optimize the relations to get rid of relations that are redundant
 
 ## Boyce-Codd Normal Form
 
-Given a relation $\large r$ with the set of all attributes $\large R$ and a set of functional dependencies $\large F$, $\large r$ is in **third normal form** if and only if, for every functional dependency $\large \alpha \to \beta$ in $\large F$, at least one of the following is true:
+Given a relation $\large r$ with the set of all attributes $\large R$ and a set of functional dependencies $\large F$, $\large r$ is in **Boyce-Codd normal form** if and only if, for every functional dependency $\large \alpha \to \beta$ in $\large F$, at least one of the following is true:
 
 - $\Large \beta \sube \alpha$
-- $\Large \alpha$ is a superkey for $\large R$
+- $\Large \alpha$ is a super key for $\large R$
+
+### Boyce-Codd Normal Form Decomposition
+
+The steps for decomposing relation $r$ to multiple relations that are in Boyce-Codd normal form are as follows:
+
+- For each functional dependency $\large (\alpha \to \beta) \in F$ that is not BCNF compliant, create relations $\large R_1 = \alpha \cup \beta$ and $\large R_2 = R - \beta$
+- Repeat the previous step recursively for $\large R_1$ and $\large R_2$.
