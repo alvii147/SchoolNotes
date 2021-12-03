@@ -58,6 +58,8 @@
 
 <a href="Signals&Systems/DiscreteTimeFourierTransforms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Discrete%20Time%20Fourier%20Transforms-orange)</a>
 
+<a href="Signals&Systems/DiscreteFourierTransforms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Discrete%20Fourier%20Transforms-orange)</a>
+
 
 
 ## ECE 318 -  Communication Systems 1
