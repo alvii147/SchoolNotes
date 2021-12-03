@@ -56,7 +56,7 @@
 
 <a href="Signals&Systems/ZTransforms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Z%20Transforms-orange)</a>
 
-<a href="Signals&Systems/DiscreteTimeFourierTransform" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Discrete%20Time%20Fourier%20Transform-orange)</a>
+<a href="Signals&Systems/DiscreteTimeFourierTransforms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Signals%20%26%20Systems-Discrete%20Time%20Fourier%20Transforms-orange)</a>
 
 
 
