@@ -1,4 +1,4 @@
-# Discrete-Time Fourier Transform
+# Discrete-Time Fourier Transforms
 
 ## Definition
 
