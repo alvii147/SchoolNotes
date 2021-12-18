@@ -36,6 +36,8 @@
 
 <a href="PowerSystems/Transformers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Transformers-goldenrod)</a>
 
+<a href="PowerSystems/SynchronousMachines" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Synchronous%20Machines-goldenrod)</a>
+
 
 
 ## ECE 307 - Probability Theory & Statistics 2
@@ -99,6 +101,8 @@
 <a href="PowerSystems/MagneticCircuits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Magnetic%20Circuits-goldenrod)</a>
 
 <a href="PowerSystems/Transformers" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Transformers-goldenrod)</a>
+
+<a href="PowerSystems/SynchronousMachines" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Power%20Systems-Synchronous%20Machines-goldenrod)</a>
 
 
 
