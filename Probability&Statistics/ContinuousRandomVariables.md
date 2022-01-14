@@ -126,6 +126,23 @@ $$
 
 - $\large X : N(\mu, \sigma^2) \implies F_X(a) = \Phi(\frac{a - \mu}{\sigma})$
 
+## Student's t-Distribution
+
+The **T-statistic** $\large T$ is a random variable with parameters $\large \mu$ (population mean), $\large \bar{x}$ (sample mean), $\large \sigma$ (population standard deviation), $\large S$ (sample standard deviation) and $\large n$ (degrees of freedom + 1), and is defined as:
+$$
+\Large T = \frac{\bar{x} - \mu}{S / \sqrt{n}}
+$$
+The probability distribution function of the $\large t$ distribution is given by:
+$$
+\Large f(t) = \frac{\Gamma(\frac{\nu + 1}{2})}{\sqrt{\nu \pi} \: \Gamma(\frac{\nu}{2})} \Big(1 + \frac{t^2}{\nu}\Big)^{-\frac{\nu + 1}{2}}
+$$
+
+### Properties
+
+- $\large E[T] = 0$, for $\large \nu \gt 1$
+- $\large Var(T) = \frac{\nu}{\nu - 2}$, for $\large \nu \gt 2$
+- $\large SD(T) = \sqrt{\frac{\nu}{\nu - 2}}$, for $\large \nu \gt 2$
+
 ## Exponential Random Variable
 
 An **exponential random variable** $\large X$ is a continuous random variable with parameter $\large \lambda$ with its probability density function defined as:
