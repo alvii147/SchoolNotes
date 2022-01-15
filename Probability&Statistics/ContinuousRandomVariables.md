@@ -126,15 +126,55 @@ $$
 
 - $\large X : N(\mu, \sigma^2) \implies F_X(a) = \Phi(\frac{a - \mu}{\sigma})$
 
-## Student's t-Distribution
+## Chi-Square Random Variable
 
-The **T-statistic** $\large T$ is a random variable with parameters $\large \mu$ (population mean), $\large \bar{x}$ (sample mean), $\large \sigma$ (population standard deviation), $\large S$ (sample standard deviation) and $\large n$ (degrees of freedom + 1), and is defined as:
+Given $\large \nu$ standard random variables $\large Z_1, Z_2, ..., Z_\nu$, the **chi-square random variable** $\large X$ is given by:
 $$
-\Large T = \frac{\bar{x} - \mu}{S / \sqrt{n}}
+\Large X = \sum\limits_{i=1}^{\nu}{Z_i^2}
 $$
-The probability distribution function of the $\large t$ distribution is given by:
+where $\large \nu$ represents degrees of freedom.
+
+The probability density function of a chi-square random variable is the **chi-square distribution**, and is defined by:
+$$
+\Large f(x) = \frac{e^{-\frac{x}{2}} x^{\frac{\nu}{2} - 1}}{2^{\frac{\nu}{2}} \Gamma(\frac{\nu}{2})}, \:\:\:\:\: \text{for} \: x \ge 0
+$$
+
+where $\large \Gamma(\alpha)$ is the gamma function and is defined as:
+$$
+\Large \Gamma(\alpha) = \int\limits^\infty_0 e^{-t} y^{\alpha - 1}dt
+$$
+
+The cumulative distribution function $\large F(x)$ of the chi-square distribution is defined by:
+$$
+\Large F(x) = \frac{\gamma(\frac{\nu}{2}, \frac{x}{2})}{\Gamma(\frac{\nu}{2})}
+$$
+where $\large \gamma(x, \alpha)$ is the incomplete gamma function and is defined as:
+$$
+\Large \gamma(x, \alpha) = \int\limits^\alpha_0 e^{-t} \: t^{x - 1} dt
+$$
+
+### Properties
+
+- $\large E[X] = \nu$
+- $\large Var(X) = 2 \nu$
+- $\large SD(X) = \sqrt{2 \nu}$
+
+## T-Statistic
+
+Given a normal random variable $\large Z$ and a $\large \chi$-squared random variable $\large U$, the **T-statistic** $\large T$ is a random variable with parameters $\large \mu$ (population mean of $\large Z$), $\large \bar{x}$ (sample mean), $\large \sigma$ (population standard deviation of $\large Z$), $\large s$ (sample standard deviation) and $\large n$ (degrees of freedom of $\large \chi$), and is defined as:
+$$
+\Large T = \frac{Z}{\sqrt{U / n}} = \frac{\bar{x} - \mu}{s / \sqrt{n}}
+$$
+The probability distribution function of the T-statistic is the **Student's $\large t$-distribution,** and is defined by:
 $$
 \Large f(t) = \frac{\Gamma(\frac{\nu + 1}{2})}{\sqrt{\nu \pi} \: \Gamma(\frac{\nu}{2})} \Big(1 + \frac{t^2}{\nu}\Big)^{-\frac{\nu + 1}{2}}
+$$
+
+where $\large \nu$ is the degrees of freedom ($\large \nu = n - 1$) and $\large \Gamma(\alpha)$ is the gamma function.
+
+The cumulative distribution function $\large F(t)$ of the T-statistic is defined by:
+$$
+\Large \frac{1}{2} + t \: \Gamma \Big(\frac{\nu + 1}{2}\Big) \times \frac{{}_2 F_1 (\frac{1}{2}, \frac{\nu + 1}{2}, \frac{3}{2}, -\frac{t^2}{\nu})}{\sqrt{\pi \nu} \: \Gamma(\frac{\nu}{2})}
 $$
 
 ### Properties
@@ -145,7 +185,7 @@ $$
 
 ## Exponential Random Variable
 
-An **exponential random variable** $\large X$ is a continuous random variable with parameter $\large \lambda$ with its probability density function defined as:
+An **exponential random variable** $\large X$ is a continuous random variable with parameter $\large \lambda$ with its probability density function, the **exponential distribution** defined as:
 $$
 \Large f(x) = \begin{cases}
 \lambda e^{-\lambda x} & \text{if} \: x \ge 0 \\
@@ -163,13 +203,22 @@ $$
 - $\large Var(X) = \frac{1}{\lambda^2}$
 - $\large SD(X) = \frac{1}{\lambda}$
 
-## Memoryless Random Variable
+## Logistic Random Variable
 
-A **memoryless random variable** $\large X$ is one that satisfies the followings condition:
+A **logistic random variable** $\large X$ is a continuous random variable with mean parameter $\large \mu$ and scale parameter $\large s$, with its probability density function, the **logistic distribution** defined as:
 $$
-\Large P\{X \gt a + b \: | \: X \gt b\} = P\{X \gt a\} \:\:\: \text{for all} \: a, b \ge 0
+\Large f(x) \frac{e^{-\frac{x - \mu}{s}}}{s(1 + e^{-\frac{x - \mu}{s}})^2}
 $$
-An exponential random variable is memoryless.
+The cumulative distribution function is defined by:
+$$
+\Large F(x) = \frac{1}{1 + e^{-\frac{x - \mu}{s}}}
+$$
+
+### Properties
+
+- $\large E[X] = \mu$
+- $\large Var(X) = \frac{s^2 \pi^2}{3}$
+- $\large S(X) = \frac{s \pi}{\sqrt{3}}$
 
 ## Gamma Random Variable
 
@@ -180,10 +229,7 @@ $$
 0 & \text{if} \: x \lt 0
 \end{cases}
 $$
-where $\large \Gamma(\alpha)$ is the gamma function and is defined as:
-$$
-\Large \Gamma(\alpha) = \int\limits^\infty_0 e^{-y} y^{\alpha - 1}dy
-$$
+where $\large \Gamma(\alpha)$ is the gamma function.
 
 ### Properties
 
@@ -191,3 +237,10 @@ $$
 - $\large Var(X) = \frac{\alpha}{\lambda^2}$
 - $\large SD(X) = \frac{\sqrt{\alpha}}{\lambda}$
 
+## Memoryless Random Variable
+
+A **memoryless random variable** $\large X$ is one that satisfies the followings condition:
+$$
+\Large P\{X \gt a + b \: | \: X \gt b\} = P\{X \gt a\} \:\:\: \text{for all} \: a, b \ge 0
+$$
+An exponential random variable is memoryless.
