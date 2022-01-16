@@ -46,6 +46,8 @@
 
 <a href="Probability&Statistics/Probability" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Probability-cyan)</a>
 
+<a href="Probability&Statistics/DescriptiveStatistics" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Descriptive%20Statistics-cyan)</a>
+
 <a href="Probability&Statistics/DiscreteRandomVariables" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Discrete%20Random%20Variables-cyan)</a>
 
 <a href="Probability&Statistics/ContinuousRandomVariables" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Continuous%20Random%20Variables-cyan)</a>
