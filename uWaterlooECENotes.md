@@ -54,6 +54,8 @@
 
 <a href="Probability&Statistics/BayesianStatistics" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Bayesian%20Statistics-cyan)</a>
 
+<a href="Probability&Statistics/HypothesisTesting" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Hypothesis%20Testing-cyan)</a>
+
 
 
 ## ECE 313 -  Digital Signal Processing
