@@ -183,6 +183,31 @@ $$
 - $\large Var(T) = \frac{\nu}{\nu - 2}$, for $\large \nu \gt 2$
 - $\large SD(T) = \sqrt{\frac{\nu}{\nu - 2}}$, for $\large \nu \gt 2$
 
+## F-Statistic
+
+Given chi-squared random variables $\large X$ and $\large Y$, with degrees of freedom $\large \nu_1$ and $\large \nu_2$ respectively, the F-statistic $\large W$ is defined as:
+$$
+\Large f(W) = \frac{\Gamma (\frac{\nu_1 + \nu_2}{2})}{\Gamma(\frac{\nu_1}{2}) \Gamma(\frac{\nu_2}{2})} \Big(\frac{\nu_1}{\nu_2}\Big)^\frac{\nu_1}{2} \times W^{\frac{\nu_1}{2} - 1} \Big(1 + \frac{\nu_1}{\nu_2}W\Big)^\frac{-(\nu_1 + \nu_2)}{2}
+$$
+The cumulative distribution function $\large F(W)$ of the F-statistic is defined by:
+$$
+\huge F(W) = 1 - I_k (\frac{\nu_2}{2}, \frac{\nu_1}{2})
+$$
+where $\large k = \frac{\nu_2}{\nu_2 + \nu_1W}$ and $\large I_k$ is the incomplete beta function,
+$$
+\huge I_k(x, \alpha, \beta) = \frac{\int\limits^x_0 t^{\alpha - 1}(1 - t)^{\beta - 1} dt}{B(\alpha, \beta)}
+$$
+where $\large B$ is the beta function,
+$$
+\huge B(\alpha, \beta) = \int\limits^1_0 t^{\alpha - 1} (1 - t)^{\beta - 1} dt
+$$
+
+### Properties
+
+- $\large E[W] = \frac{\nu_2}{\nu_2 - 2}$, for $\large \nu_2 \gt 2$
+- $\large Var(T) = \frac{2\nu_2^2(\nu_1 + \nu_2 - 2)}{\nu_1(\nu_2 - 2)^2 (\nu_2 - 4)}$, for $\large \nu_2 \gt 4$
+- $\large SD(T) = \sqrt{\frac{2\nu_2^2(\nu_1 + \nu_2 - 2)}{\nu_1(\nu_2 - 2)^2 (\nu_2 - 4)}}$, for $\large \nu_2 \gt 4$
+
 ## Exponential Random Variable
 
 An **exponential random variable** $\large X$ is a continuous random variable with parameter $\large \lambda$ with its probability density function, the **exponential distribution** defined as:
