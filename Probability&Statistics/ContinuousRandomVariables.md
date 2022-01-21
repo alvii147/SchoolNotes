@@ -187,6 +187,10 @@ $$
 
 Given chi-squared random variables $\large X$ and $\large Y$, with degrees of freedom $\large \nu_1$ and $\large \nu_2$ respectively, the F-statistic $\large W$ is defined as:
 $$
+\huge W = \frac{X / \nu_1}{Y / \nu_2}
+$$
+The probability distribution function $\large f(W)$ is the **Snedecor's $\large F$-distribution**, and is defined by:
+$$
 \Large f(W) = \frac{\Gamma (\frac{\nu_1 + \nu_2}{2})}{\Gamma(\frac{\nu_1}{2}) \Gamma(\frac{\nu_2}{2})} \Big(\frac{\nu_1}{\nu_2}\Big)^\frac{\nu_1}{2} \times W^{\frac{\nu_1}{2} - 1} \Big(1 + \frac{\nu_1}{\nu_2}W\Big)^\frac{-(\nu_1 + \nu_2)}{2}
 $$
 The cumulative distribution function $\large F(W)$ of the F-statistic is defined by:
