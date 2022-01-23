@@ -49,3 +49,147 @@ $$
 \end{align*}
 $$
 
+## $z$-Test
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$
+- $\Large x_i \sim N(\mu, \sigma^2)$
+- $\Large \mu$ is unknown, $\Large \sigma^2$ is known
+
+### Null Hypothesis
+
+$$
+\Large H_0: \mu = \mu_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A: \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
+$$
+
+### Test Statistic
+
+$$
+\Large z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+$$
+
+## $z$-Test: Two Samples
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
+- $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
+- $\Large \mu_x, \mu_y$ are unknown, $\Large \sigma_x^2, \sigma_y^2$ are known
+
+### Null Hypothesis
+
+$$
+\Large H_0 : \mu_x - \mu_y = \mu_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \mu_x - \mu_y \gt \mu_0, \: \mu_x - \mu_y \lt \mu_0, \: \text{or} \: \mu_x - \mu_y \neq \mu_0
+$$
+
+### Test Statistic
+
+$$
+\Large z = \frac{\bar{x} - \bar{y} - \mu_0}{\sigma_p}
+$$
+
+where $\large \sigma_p^2$ is the pooled population variance:
+$$
+\Large \sigma_p^2 = \frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}
+$$
+
+## $t$-Test
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$
+- $\Large x_i \sim N(\mu, \sigma^2)$
+- $\Large \mu, \sigma^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0: \mu = \mu_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large  H_A: \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
+$$
+
+### Test Statistic
+
+$$
+\Large t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
+$$
+
+## $t$-Test: Two Samples with Equal Variances
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
+- $\Large x_i \sim N(\mu_x, \sigma^2)$, $\Large y_i \sim N(\mu_y, \sigma^2)$
+- $\Large \mu_x, \mu_y, \sigma^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0 : \mu_x - \mu_y = \mu_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \mu_x - \mu_y \gt \mu_0, \: \mu_x - \mu_y \lt \mu_0, \: \text{or} \: \mu_x - \mu_y \neq \mu_0
+$$
+
+### Test Statistic
+
+$$
+\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p}
+$$
+
+where $\large s_p^2$ is the pooled sample variance:
+$$
+\Large s_p^2 = \frac{(n - 1)s^2_x + (m - 1)s^2_y}{n + m - 2} \times \Big(\frac{1}{n} + \frac{1}{m}\Big)
+$$
+
+## $t$-Test: Two Samples with Unequal Variances
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
+- $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
+- $\Large \mu_x, \mu_y, \sigma_x^2, \sigma_y^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0 : \mu_x - \mu_y = \mu_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \mu_x - \mu_y \gt \mu_0, \: \mu_x - \mu_y \lt \mu_0, \: \text{or} \: \mu_x - \mu_y \neq \mu_0
+$$
+
+### Test Statistic
+
+$$
+\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p}
+$$
+
+where $\large s_p^2$ is the pooled sample variance:
+$$
+\Large s_p^2 = \frac{s^2_x}{n} + \frac{s^2_y}{m}
+$$
