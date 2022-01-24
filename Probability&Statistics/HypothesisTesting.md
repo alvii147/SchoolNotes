@@ -75,6 +75,21 @@ $$
 \Large z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
 $$
 
+### Null Distribution
+
+$$
+\Large \text{Standard Normal Distribution:} \\
+\Large Z \sim N(0, 1)
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{Z \le z\}$ | $\large \texttt{scipy.stats.norm.cdf(z, 0, 1)}$ | $\large \texttt{pnorm(z, 0, 1)}$
+Right-tailed | $\Large P\{Z \ge z\}$ | $\large \texttt{1 - scipy.stats.norm.cdf(z, 0, 1)}$ | $\large \texttt{1 - pnorm(z, 0, 1)}$
+Two-tailed | $\Large P\{\abs{Z} \ge \abs{z}\}$ | $\large \texttt{2 * (1 - scipy.stats.norm.cdf(abs(z), 0, 1))}$ | $\large \texttt{2 * (1 - pnorm(abs(z), 0, 1))}$
+
 ## $z$-Test: Two Samples
 
 ### Assumptions
@@ -106,6 +121,21 @@ $$
 \Large \sigma_p^2 = \frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}
 $$
 
+### Null Distribution
+
+$$
+\Large \text{Standard Normal Distribution:} \\
+\Large Z \sim N(0, 1)
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{Z \le z\}$ | $\large \texttt{scipy.stats.norm.cdf(z, 0, 1)}$ | $\large \texttt{pnorm(z, 0, 1)}$
+Right-tailed | $\Large P\{Z \ge z\}$ | $\large \texttt{1 - scipy.stats.norm.cdf(z, 0, 1)}$ | $\large \texttt{1 - pnorm(z, 0, 1)}$
+Two-tailed | $\Large P\{\abs{Z} \ge \abs{z}\}$ | $\large \texttt{2 * (1 - scipy.stats.norm.cdf(abs(z), 0, 1))}$ | $\large \texttt{2 * (1 - pnorm(abs(z), 0, 1))}$
+
 ## $t$-Test
 
 ### Assumptions
@@ -131,6 +161,21 @@ $$
 $$
 \Large t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
 $$
+
+### Null Distribution
+
+$$
+\Large \text{t-Distribution}: \\
+\Large T \sim t(n - 1)
+$$
+
+###  p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{T \le t\}$ | $\large \texttt{scipy.stats.t.cdf(t, n - 1)}$ | $\large \texttt{pt(t, n - 1)}$
+Right-tailed | $\Large P\{T \ge t\}$ | $\large \texttt{1 - scipy.stats.t.cdf(t, n - 1)}$ | $\large \texttt{1 - pt(t, n - 1)}$
+Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.stats.t.cdf(abs(t), n - 1))}$ | $\large \texttt{2 * (1 - pt(abs(t), n - 1))}$
 
 ## $t$-Test: Two Samples with Equal Variances
 
@@ -163,6 +208,21 @@ $$
 \Large s_p^2 = \frac{(n - 1)s^2_x + (m - 1)s^2_y}{n + m - 2} \times \Big(\frac{1}{n} + \frac{1}{m}\Big)
 $$
 
+### Null Distribution
+
+$$
+\Large \text{t-Distribution}: \\
+\Large T \sim t(n + m - 2)
+$$
+
+###  p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{T \le t\}$ | $\large \texttt{scipy.stats.t.cdf(t, n + m - 2)}$ | $\large \texttt{pt(t, n + m - 2)}$
+Right-tailed | $\Large P\{T \ge t\}$ | $\large \texttt{1 - scipy.stats.t.cdf(t, n + m - 2)}$ | $\large \texttt{1 - pt(t, n + m - 2)}$
+Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.stats.t.cdf(abs(t), n + m - 2))}$ | $\large \texttt{2 * (1 - pt(abs(t), n + m - 2))}$
+
 ## $t$-Test: Two Samples with Unequal Variances
 
 ### Assumptions
@@ -193,3 +253,112 @@ where $\large s_p^2$ is the pooled sample variance:
 $$
 \Large s_p^2 = \frac{s^2_x}{n} + \frac{s^2_y}{m}
 $$
+
+### Null Distribution
+
+$$
+\Large t\text{-Distribution (approximation)}: \\
+\Large T \sim t(df)
+$$
+
+where $\large df$ is the degrees of freedom, defined by,
+$$
+\Large df = \Bigg\lfloor \frac{(s_x^2 / n + s_y^2 / m)^2}{(s_x^2 / n)^2 / (n - 1) + (s_y^2 / m)^2 / (m - 1)} \Bigg\rceil
+$$
+where $\large \lfloor a \rceil$ is the nearest integer of $\large a$.
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{T \le t\}$ | $\large \texttt{scipy.stats.t.cdf(t, df)}$ | $\large \texttt{pt(t, df)}$
+Right-tailed | $\Large P\{T \ge t\}$ | $\large \texttt{1 - scipy.stats.t.cdf(t, df)}$ | $\large \texttt{1 - pt(t, df)}$
+Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.stats.t.cdf(abs(t), df))}$ | $\large \texttt{2 * (1 - pt(abs(t), df))}$
+
+## $F$-Test for Equal Means (One Way ANOVA)
+
+### Assumptions
+
+- Samples: $\large n$ sets of $\large m$ samples, $\Large x_{ij}; \: i = 1, 2, ..., n; \: j = 1, 2, ..., m$
+- $\Large x_{ij} \sim N(\mu_i, \sigma^2)$
+- $\Large \mu_i, \sigma^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0 : \mu_1 = \mu_2 = \: ... = \mu_n
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \mu_i \neq \mu_j \: \text{for some} \: i, j
+$$
+
+### Test Statistic
+
+$$
+\Large v = \frac{MS_b}{MS_w}
+$$
+
+where,
+$$
+\Large \text{Mean Squared Sum Within Sets}, \: MS_w \\[5pt]
+\Large = \frac{SS_w}{n(m - 1)} \\[15pt]
+\Large \text{Mean Squared Sum Between Sets}, \: MS_b \\[5pt]
+\Large = \frac{SS_b}{n - 1} \\[15pt]
+\Large \text{Squared Sum Within Sets}, \: SS_w \\[5pt]
+\Large = \sum\limits^n_{i = 1} \sum\limits^m_{j = 1} (x_{ij} - \bar{x_i})^2 = \sum\limits^n_{i = 1}(m - 1) s_i^2 \\[15pt]
+\Large \text{Squared Sum Between Sets}, \: SS_b \\[5pt]
+\Large = \sum\limits^n_{i = 1} m(\bar{x_i} - \bar{x})^2
+$$
+
+### Null Distribution
+
+$$
+\Large F\text{-Distribution}: \\
+\Large V \sim F(n - 1, \: n(m - 1))
+$$
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Right-tailed | $\Large P\{V \ge v\}$ | $\large \texttt{1 - scipy.stats.f.cdf(v, n - 1, n * (m - 1))}$ | $\large \texttt{1 - pf(v, n - 1, n * (m - 1))}$
+
+## $F$-Test for Equal Variances
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
+- $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
+- $\Large \mu_x, \mu_y, \sigma_x^2, \sigma_y^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0 :\sigma_x =  \sigma_y
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \sigma_x \gt \sigma_y, \: \sigma_x \lt \sigma_y \: \text{or} \: \sigma_x \neq \sigma_y
+$$
+
+### Test Statistic
+
+$$
+\Large v = \frac{s_x^2}{s_y^2}
+$$
+
+### Null Distribution
+
+$$
+\Large F\text{-Distribution}: \\
+\Large V \sim F(n - 1, m - 1)
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{V \le v\}$ | $\large \texttt{scipy.stats.f.cdf(v, n - 1, m - 1)}$ | $\large \texttt{pf(v, n - 1, m - 1)}$
+Right-tailed | $\Large P\{V \ge v\}$ | $\large \texttt{1 - scipy.stats.f.cdf(v, n - 1, m - 1)}$ | $\large \texttt{1 - pf(v, n - 1, m - 1)}$
+Two-tailed | $\Large P\{\abs{V} \ge \abs{v}\}$ | $\large \texttt{2 * min(1 - scipy.stats.f.cdf(v, n - 1, m - 1), scipy.stats.f.cdf(v, n - 1, m - 1))}$ | $\large \texttt{2 * min(1 - pf(v, n - 1, m - 1), pf(v, n - 1, m - 1))}$
