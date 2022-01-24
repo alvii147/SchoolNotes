@@ -362,3 +362,44 @@ Test Type | p-value | Python | R
 Left-tailed | $\Large P\{V \le v\}$ | $\large \texttt{scipy.stats.f.cdf(v, n - 1, m - 1)}$ | $\large \texttt{pf(v, n - 1, m - 1)}$
 Right-tailed | $\Large P\{V \ge v\}$ | $\large \texttt{1 - scipy.stats.f.cdf(v, n - 1, m - 1)}$ | $\large \texttt{1 - pf(v, n - 1, m - 1)}$
 Two-tailed | $\Large P\{\abs{V} \ge \abs{v}\}$ | $\large \texttt{2 * min(1 - scipy.stats.f.cdf(v, n - 1, m - 1), scipy.stats.f.cdf(v, n - 1, m - 1))}$ | $\large \texttt{2 * min(1 - pf(v, n - 1, m - 1), pf(v, n - 1, m - 1))}$
+
+## $\chi^2$-Test for Variance
+
+### Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$
+- $\Large x_i \sim N(\mu, \sigma^2)$
+- $\Large \mu, \sigma^2$ are unknown
+
+### Null Hypothesis
+
+$$
+\Large H_0 :\sigma =  \sigma_0
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : \sigma \gt \sigma_0, \: \sigma \lt \sigma_0 \: \text{or} \: \sigma \neq \sigma_0
+$$
+
+### Test Statistic
+
+$$
+\Large u = \frac{(n - 1) s^2}{\sigma_0^2}
+$$
+
+### Null Distribution
+
+$$
+\Large \chi^2\text{-Distribution}: \\
+\Large U \sim \chi^2(n - 1)
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Left-tailed | $\Large P\{U \le u\}$ | $\large \texttt{scipy.stats.chi2.cdf(u, n - 1)}$ | $\large \texttt{pchisq(u, n - 1)}$
+Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, n - 1)}$ | $\large \texttt{1 - pchisq(u, n - 1)}$
+Two-tailed | $\Large P\{\abs{U} \ge \abs{u}\}$ | $\large \texttt{2 * min(1 - scipy.stats.chi2.cdf(u, n - 1), scipy.stats.chi2.cdf(u, n - 1))}$ | $\large \texttt{2 * min(1 - pchisq(u, n - 1), pchisq(u, n - 1))}$
