@@ -51,7 +51,7 @@ $$
 
 ## $z$-Test
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$
 - $\Large x_i \sim N(\mu, \sigma^2)$
@@ -92,7 +92,7 @@ Two-tailed | $\Large P\{\abs{Z} \ge \abs{z}\}$ | $\large \texttt{2 * (1 - scipy.
 
 ## $z$-Test: Two Samples
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
 - $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
@@ -138,7 +138,7 @@ Two-tailed | $\Large P\{\abs{Z} \ge \abs{z}\}$ | $\large \texttt{2 * (1 - scipy.
 
 ## $t$-Test
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$
 - $\Large x_i \sim N(\mu, \sigma^2)$
@@ -179,7 +179,7 @@ Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.
 
 ## $t$-Test: Two Samples with Equal Variances
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
 - $\Large x_i \sim N(\mu_x, \sigma^2)$, $\Large y_i \sim N(\mu_y, \sigma^2)$
@@ -225,7 +225,7 @@ Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.
 
 ## $t$-Test: Two Samples with Unequal Variances
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
 - $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
@@ -275,7 +275,7 @@ Two-tailed | $\Large P\{\abs{T} \ge \abs{t}\}$ | $\large \texttt{2 * (1 - scipy.
 
 ## $F$-Test for Equal Means (One Way ANOVA)
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\large n$ sets of $\large m$ samples, $\Large x_{ij}; \: i = 1, 2, ..., n; \: j = 1, 2, ..., m$
 - $\Large x_{ij} \sim N(\mu_i, \sigma^2)$
@@ -324,7 +324,7 @@ Right-tailed | $\Large P\{V \ge v\}$ | $\large \texttt{1 - scipy.stats.f.cdf(v, 
 
 ## $F$-Test for Equal Variances
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$ and $\Large y_1, y_2, ..., y_m$
 - $\Large x_i \sim N(\mu_x, \sigma_x^2)$, $\Large y_i \sim N(\mu_y, \sigma_y^2)$
@@ -365,7 +365,7 @@ Two-tailed | $\Large P\{\abs{V} \ge \abs{v}\}$ | $\large \texttt{2 * min(1 - sci
 
 ## $\chi^2$-Test for Variance
 
-### Assumptions
+### Setup & Assumptions
 
 - Samples: $\Large x_1, x_2, ..., x_n$
 - $\Large x_i \sim N(\mu, \sigma^2)$
