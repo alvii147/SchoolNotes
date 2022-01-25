@@ -60,13 +60,13 @@ $$
 ### Null Hypothesis
 
 $$
-\Large H_0: \mu = \mu_0
+\Large H_0 : \mu = \mu_0
 $$
 
 ### Alternative Hypothesis
 
 $$
-\Large H_A: \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
+\Large H_A : \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
 $$
 
 ### Test Statistic
@@ -147,13 +147,13 @@ Two-tailed | $\Large P\{\abs{Z} \ge \abs{z}\}$ | $\large \texttt{2 * (1 - scipy.
 ### Null Hypothesis
 
 $$
-\Large H_0: \mu = \mu_0
+\Large H_0 : \mu = \mu_0
 $$
 
 ### Alternative Hypothesis
 
 $$
-\Large  H_A: \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
+\Large  H_A : \mu \gt \mu_0, \: \mu \lt \mu_0, \: \text{or} \: \mu \neq \mu_0
 $$
 
 ### Test Statistic
@@ -257,7 +257,7 @@ $$
 ### Null Distribution
 
 $$
-\Large t\text{-Distribution (approximation)}: \\
+\Large t\text{-Distribution}: \\
 \Large T \sim t(df)
 $$
 
@@ -333,7 +333,7 @@ Right-tailed | $\Large P\{V \ge v\}$ | $\large \texttt{1 - scipy.stats.f.cdf(v, 
 ### Null Hypothesis
 
 $$
-\Large H_0 :\sigma_x =  \sigma_y
+\Large H_0 : \sigma_x =  \sigma_y
 $$
 
 ### Alternative Hypothesis
@@ -374,7 +374,7 @@ Two-tailed | $\Large P\{\abs{V} \ge \abs{v}\}$ | $\large \texttt{2 * min(1 - sci
 ### Null Hypothesis
 
 $$
-\Large H_0 :\sigma =  \sigma_0
+\Large H_0 : \sigma =  \sigma_0
 $$
 
 ### Alternative Hypothesis
@@ -403,3 +403,85 @@ Test Type | p-value | Python | R
 Left-tailed | $\Large P\{U \le u\}$ | $\large \texttt{scipy.stats.chi2.cdf(u, n - 1)}$ | $\large \texttt{pchisq(u, n - 1)}$
 Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, n - 1)}$ | $\large \texttt{1 - pchisq(u, n - 1)}$
 Two-tailed | $\Large P\{\abs{U} \ge \abs{u}\}$ | $\large \texttt{2 * min(1 - scipy.stats.chi2.cdf(u, n - 1), scipy.stats.chi2.cdf(u, n - 1))}$ | $\large \texttt{2 * min(1 - pchisq(u, n - 1), pchisq(u, n - 1))}$
+
+## $\chi^2$-Test for Goodness of Fit: Single Specific Distribution
+
+### Setup & Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$, where $\Large x_i \in \{\omega_1, \omega_2, ..., \omega_K\}$
+- Distribution: $\Large \{p_i\}^K_{i = 1}$
+- Frequency: $\Large O_1, O_2, ..., O_K$, where $\Large O_i$ is the number of occurrences of $\Large \omega_i$ in the sample $\Large x_1, x_2, ..., x_n$, which means $\Large O_1 + O_2 + ... + O_K = n$
+
+### Null Hypothesis
+
+$$
+\Large H_0 : x_i \: \text{follows distribution} \: \{p_i\}^K_{i = 1}
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : x_i \: \text{does not follow distribution} \: \{p_i\}^K_{i = 1}
+$$
+
+### Test Statistic
+
+$$
+\Large u = \sum\limits^K_{i = 1} \frac{(O_i - n p_i)^2}{n p_i}
+$$
+
+### Null Distribution
+
+$$
+\Large \chi^2\text{-Distribution}: \\
+\Large U \sim \chi^2(K - 1)
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, K - 1)}$ | $\large \texttt{1 - pchisq(u, K - 1)}$
+
+## $\chi^2$-Test for Goodness of Fit: Statistical Model
+
+### Setup & Assumptions
+
+- Samples: $\Large x_1, x_2, ..., x_n$, where $\Large x_i \in \{\omega_1, \omega_2, ..., \omega_K\}$
+- Statistical Model: $\Large \{(p_1(\theta), p_2(\theta), ..., p_K(\theta)) : \theta \in \Theta\}$
+- Frequency: $\Large O_1, O_2, ..., O_K$, where $\Large O_i$ is the number of occurrences of $\Large \omega_i$ in the sample $\Large x_1, x_2, ..., x_n$, which means $\Large O_1 + O_2 + ... + O_K = n$
+
+### Null Hypothesis
+
+$$
+\Large H_0 : x_i \: \text{follows model} \: \{(p_1(\theta), p_2(\theta), ..., p_K(\theta)) : \theta \in \Theta\}
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_A : x_i \: \text{does not follow model} \: \{(p_1(\theta), p_2(\theta), ..., p_K(\theta)) : \theta \in \Theta\}
+$$
+
+### Test Statistic
+
+$$
+\Large u = \sum\limits^K_{i = 1} \frac{(O_i - n p_i(\hat{\theta}))^2}{n p_i(\hat{\theta})}
+$$
+
+where $\large \hat{\theta}$ is the maximum likelihood estimate of $\large \theta$ under $\large H_0$.
+
+### Null Distribution
+
+$$
+\Large \chi^2\text{-Distribution}: \\
+\Large U \sim \chi^2(K - 1 - dim(\Theta))
+$$
+
+where $\large dim(\Theta)$ is the dimension of the parameter space $\large \Theta$.
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, K - 1 - dim)}$ | $\large \texttt{1 - pchisq(u, K - 1 - dim)}$
