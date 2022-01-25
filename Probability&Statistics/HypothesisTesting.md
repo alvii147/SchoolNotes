@@ -200,12 +200,12 @@ $$
 ### Test Statistic
 
 $$
-\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p}
+\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p \sqrt{\frac{1}{n} + \frac{1}{m}}}
 $$
 
 where $\large s_p^2$ is the pooled sample variance:
 $$
-\Large s_p^2 = \frac{(n - 1)s^2_x + (m - 1)s^2_y}{n + m - 2} \times \Big(\frac{1}{n} + \frac{1}{m}\Big)
+\Large s_p^2 = \frac{(n - 1)s^2_x + (m - 1)s^2_y}{n + m - 2}
 $$
 
 ### Null Distribution
@@ -246,12 +246,12 @@ $$
 ### Test Statistic
 
 $$
-\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p}
+\Large t = \frac{\bar{x} - \bar{y} - \mu_0}{s_p \sqrt{\frac{1}{n} + \frac{1}{m}}}
 $$
 
 where $\large s_p^2$ is the pooled sample variance:
 $$
-\Large s_p^2 = \frac{s^2_x}{n} + \frac{s^2_y}{m}
+\Large s_p^2 = s^2_x + s^2_y
 $$
 
 ### Null Distribution
