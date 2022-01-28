@@ -58,6 +58,8 @@
 
 <a href="Probability&Statistics/ConfidenceIntervals" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Confidence%20Intervals-cyan)</a>
 
+<a href="Probability&Statistics/Regression" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Regression-cyan)</a>
+
 
 
 ## ECE 313 -  Digital Signal Processing
