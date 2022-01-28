@@ -308,7 +308,10 @@ $$
 \Large \text{Squared Sum Within Sets}, \: SS_w \\[5pt]
 \Large = \sum\limits^n_{i = 1} \sum\limits^m_{j = 1} (x_{ij} - \bar{x_i})^2 = \sum\limits^n_{i = 1}(m - 1) s_i^2 \\[15pt]
 \Large \text{Squared Sum Between Sets}, \: SS_b \\[5pt]
-\Large = \sum\limits^n_{i = 1} m(\bar{x_i} - \bar{x})^2
+\Large = \sum\limits^n_{i = 1} m(\bar{x_i} - \bar{x})^2 \\[15pt]
+\Large \text{Squared Sum Total}, \: SS_t \\[5pt]
+\Large = \sum\limits^n_{i = 1} \sum\limits^m_{j = 1} (x_{ij} - \bar{x})^2 \\[15pt]
+\Large SS_t = SS_w + SS_b
 $$
 
 ### Null Distribution
