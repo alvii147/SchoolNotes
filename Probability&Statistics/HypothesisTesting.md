@@ -452,7 +452,7 @@ Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(
 
 - Samples: $\Large x_1, x_2, ..., x_n$, where $\Large x_i \in \{\omega_1, \omega_2, ..., \omega_K\}$
 - Statistical Model: $\Large \{(p_1(\theta), p_2(\theta), ..., p_K(\theta)) : \theta \in \Theta\}$
-- Frequency: $\Large O_1, O_2, ..., O_K$, where $\Large O_i$ is the number of occurrences of $\Large \omega_i$ in the sample $\Large x_1, x_2, ..., x_n$, which means $\Large O_1 + O_2 + ... + O_K = n$
+- Frequency: $\Large O_1, O_2, ..., O_K$, where $\Large O_i$ is the number of occurrences of $\Large \omega_k$ in the sample $\Large x_1, x_2, ..., x_n$, which means $\Large O_1 + O_2 + ... + O_K = n$
 
 ### Null Hypothesis
 
@@ -469,7 +469,7 @@ $$
 ### Test Statistic
 
 $$
-\Large u = \sum\limits^K_{i = 1} \frac{(O_i - n p_i(\hat{\theta}))^2}{n p_i(\hat{\theta})}
+\Large u = \sum\limits^K_{k = 1} \frac{(O_k - n p_k(\hat{\theta}))^2}{n p_k(\hat{\theta})}
 $$
 
 where $\large \hat{\theta}$ is the maximum likelihood estimate of $\large \theta$ under $\large H_0$.
@@ -488,3 +488,45 @@ where $\large dim(\Theta)$ is the dimension of the parameter space $\large \Thet
 Test Type | p-value | Python | R
 --- | --- | --- | ---
 Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, K - 1 - dim)}$ | $\large \texttt{1 - pchisq(u, K - 1 - dim)}$
+
+## $\chi^2$-Test for Goodness of Fit: Independence
+
+### Setup & Assumptions
+
+- Samples: $\Large (x_1, y_1), (x_2, y_2), ..., (x_n, y_n)$, where $\Large x_i \in \{\omega_1, \omega_2, ..., \omega_K\}$ and $\Large y_i \in \{\psi_1, \psi_2, ..., \psi_L\}$
+- Distribution: $\Large p_{k,l} = P\{X =\omega_k,Y = \psi_l\}$
+- Frequency: $\Large O_{i,.}$ is the number of occurrences of $\Large \omega_k$ in the sample $\large x_i$ and $\Large O_{.,j}$ is the number of occurrences of $\Large \psi_k$ in the sample $\large y_i$, which means $\Large \sum\limits^{K}_{k = 1} \sum\limits^{L}_{l = 1} O_{k, l} = n$
+- Maximum Likelihood Estimate: $\Large \hat{p}_{k,.} = \frac{O_{k,.}}{n}, \hat{p}_{.,l} = \frac{O_{.,l}}{n}$
+
+### Null Hypothesis
+
+$$
+\Large H_0 : \: \text{X \& Y are independent} \\
+\Large \: p_{k, l} = p_{k,.} \times p_{.,l}
+$$
+
+### Alternative Hypothesis
+
+$$
+\Large H_0 : \: \text{X \& Y are NOT independent} \\
+\Large \: p_{k, l} \ne p_{k,.} \times p_{.,l} \: \text{for some} \: k, l
+$$
+
+### Test Statistic
+
+$$
+\Large u = \sum\limits^K_{k = 1} \sum\limits^L_{l = 1} \frac{(O_{k, l} - n \hat{p}_{k,.} \hat{p}_{.,l})^2}{n \hat{p}_{k,.} \hat{p}_{.,l}}
+$$
+
+### Null Distribution
+
+$$
+\Large \chi^2\text{-Distribution}: \\
+\Large U \sim \chi^2((K - 1)(L - 1))
+$$
+
+### p-Value
+
+Test Type | p-value | Python | R
+--- | --- | --- | ---
+Right-tailed | $\Large P\{U \ge u\}$ | $\large \texttt{1 - scipy.stats.chi2.cdf(u, (K - 1) * (L - 1)}$ | $\large \texttt{1 - pchisq(u, (K - 1) * (L - 1))}$ 
