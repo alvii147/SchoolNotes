@@ -144,6 +144,14 @@
 
 
 
+## ECE 457C - Reinforcement Learning
+
+<a href="Probability&Statistics/InformationTheory" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Information%20Theory-cyan)</a>
+
+<a href="ArtificialIntelligence/MultiArmedBandits" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Multi%20Armed%20Bandits-palegreen)</a>
+
+
+
 ## ECON 102 - Introduction to Macroeconomics
 
 <a href="Economics/GrowthRates" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Economics-Growth%20Rates-darkred)</a>
