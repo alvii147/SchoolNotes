@@ -87,7 +87,7 @@ $$
 
 Instead of selecting exploration or exploitation based on probability, it makes sense to explore more at the beginning and reduce exploration over time. **Upper-Confidence-Bound Action Selection** involves using an additional term that accounts for the uncertainty in the value of $\large Q(a)$:
 $$
-\Large A_t = \text{argmax}\Bigg[Q_t(a) + c\frac{\ln{t}}{N_t(a)}\Bigg]
+\Large A_t = \text{argmax}\Bigg[Q_t(a) + c\sqrt{\frac{\ln{t}}{N_t(a)}}\:\Bigg]
 $$
 where $\large N_t(a)$ denotes the number of times action $\large a$ has been selected and $\large c$ controls the degree of exploration.
 
@@ -99,7 +99,7 @@ $$
 & Q = \text{zeros}(k) \: \larr \small \text{Estimated reward for each action} \\
 & N = \text{zeros}(k) \: \larr \small \text{Number of times each action was chosen} \\ \\
 & \text{Loop:} \\
-& \:\:\:\:\:\:\:\: A = \text{argmax}\Bigg[Q(a) + c\frac{\ln{i}}{N(a)}\Bigg] \\ \\
+& \:\:\:\:\:\:\:\: A = \text{argmax}\Bigg[Q(a) + c\sqrt{\frac{\ln{i}}{N(a)}}\:\Bigg] \\ \\
 & \:\:\:\:\:\:\:\: R = \text{bandit}(A) \\
 & \:\:\:\:\:\:\:\: N[A] = N[A] + 1 \\
 & \:\:\:\:\:\:\:\: Q[A] = Q[A] + \alpha(R - Q[A])
