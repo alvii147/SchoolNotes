@@ -160,15 +160,6 @@ Example | Starting a car | Fixing a car | Designing a car
 - Find near-optimal solution
 - Low computational cost
 
-## Heuristics
-
-**Heuristics** are solution strategies by trial and error used to produce acceptable (optimal or sub-optimal) solutions to complex problems in a reasonably practical time. Heuristics aim to efficiently generate good solutions, but does not guarantee optimality. Heuristics:
-
-- have short running times
-- are easy to implement
-- are flexible
-- are simple
-
 ## Approximate Algorithms
 
 ### Constructive Methods
@@ -178,3 +169,27 @@ Example | Starting a car | Fixing a car | Designing a car
 ### Local Search Methods
 
 **Local search methods** involve starting from an initial solution and iteratively trying to replace the current solution with a better one.
+
+## Problem Formulation
+
+A search problem can be formulated by outlining the following components in the problem:
+
+### State
+
+The state of the problem is a complete or partial configuration of the agent's current state.
+
+### Initial State
+
+Initial state is the state in which the agent begins the search.
+
+### Goal
+
+The goal of the problem is the state(s) that are desirable. Once a goal state is reached, the search terminates.
+
+### Actions
+
+The actions are the different moves that the agent can perform at any state.
+
+### Cost
+
+The cost of a state is an quantification of how far the current state is from the initial state.

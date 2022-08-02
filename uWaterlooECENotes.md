@@ -148,6 +148,8 @@
 
 <a href="ArtificialIntelligence/IntroductionToIntelligence" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Introduction%20to%20Intelligence-palegreen)</a>
 
+<a href="ArtificialIntelligence/SearchAlgorithms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Search%20Algorithms-palegreen)</a>
+
 
 
 ## ECE 457C - Reinforcement Learning
