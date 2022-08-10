@@ -150,6 +150,10 @@
 
 <a href="ArtificialIntelligence/SearchAlgorithms" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Search%20Algorithms-palegreen)</a>
 
+<a href="ArtificialIntelligence/SimulatedAnnealing" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Simulated%20Annealing-palegreen)</a>
+
+<a href="ArtificialIntelligence/TabuSearch" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Tabu%20Search-palegreen)</a>
+
 
 
 ## ECE 457C - Reinforcement Learning
