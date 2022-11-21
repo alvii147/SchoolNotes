@@ -2,6 +2,12 @@
 
 
 
+## CS 480 - Introduction to Machine Learning
+
+<a href="ArtificialIntelligence/Perceptron" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Perceptron-palegreen)</a>
+
+
+
 ## ECE 203 - Probability Theory & Statistics 1
 
 <a href="Probability&Statistics/Combinations&Permutations" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Combinations%20%26%20Permutations-cyan)</a>
