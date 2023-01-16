@@ -193,3 +193,40 @@ The actions are the different moves that the agent can perform at any state.
 ### Cost
 
 The cost of a state is an quantification of how far the current state is from the initial state.
+
+## Hard & Soft Computing
+
+### Hard Computing
+
+**Hard computing** techniques work following binary logic based on only two values (0 or 1) on which modern computers are based.
+
+### Soft Computing
+
+**Soft computing** techniques, based on fuzzy logic, are much closer to the way the human brain works by aggregating data to partial truths.
+
+## Crisp & Fuzzy Logic
+
+### Crisp Logic
+
+**Crisp logic** involves boolean logic, i.e. true or false. Any statement is either true or false (1 or 0).
+
+### Fuzzy Logic
+
+**Fuzzy logic** involves capturing the degree to which something is true, often as a real value between 0 and 1.
+
+## Intelligent Systems
+
+**Intelligent systems** are artificial entities involving a mix of software and hardware which have a capacity to acquire and apply knowledge in an "intelligent" manner and have the capabilities of perception, reasoning, learning, and making inferences (or, decisions) from incomplete information.
+
+## Concepts of Approximation
+
+Concept | Property | Example
+--- | --- | ---
+Ambiguity | The condition has several different possibilities and it is not determined which one is valid. | The machine response "may or may not" satisfy the specification.
+Vagueness | The condition is not precisely (clearly) defined. | The machine response "may have" met the specification.
+Generality | The condition may apply to many (finite or infinite) situations depending on the specific context. | The machien response is "x" times the specification.
+Imprecision | Condition can assume a state within a clearly defined (crisp) tolerance interval. | The machine response is "within ±5%" of the specification.
+Uncertainty | There is a degree of probability associated with occurrence of the condition. | There is a "90% probability" that the machine response meets the specification.
+Fuzziness | The membership of the condition is not crisply defined (set boundary of the condition is not crisp). | The machine response is "close to" the specification.
+Belief (Subjective Probability) | The level of belief on the condition (membership of a crisp or fuzzy set) is trhough knowledge and evidence. | It is believed at a level of 90% that the machine response meets the specification.
+Plausibility | The plausibility of nonmembership fully complements the belief of membership (dual condition of belief). $\text{Belief}(x \ in A) + \text{Plausibility}(x \notin A) = 1$. | It is plausible at a level of 95% that the machine response meets the specification.

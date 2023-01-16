@@ -168,6 +168,12 @@
 
 
 
+## ECE 457B - Fundamentals of Computational Intelligence
+
+<a href="ArtificialIntelligence/IntroductionToIntelligence" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Artificial%20Intelligence-Introduction%20to%20Intelligence-palegreen)</a>
+
+
+
 ## ECE 457C - Reinforcement Learning
 
 <a href="Probability&Statistics/InformationTheory" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Probability%20&%20Statistics-Information%20Theory-cyan)</a>
