@@ -184,6 +184,12 @@
 
 
 
+## ECE 493 T27 - Foundations of Multi-Agent Systems
+
+<a href="GameTheory/IntroductionToGameTheory" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Game%20Theory-Introduction%20to%20Game%20Theory-rosybrown)</a>
+
+
+
 ## ECON 102 - Introduction to Macroeconomics
 
 <a href="Economics/GrowthRates" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Economics-Growth%20Rates-darkred)</a>
