@@ -188,6 +188,8 @@
 
 <a href="GameTheory/IntroductionToGameTheory" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Game%20Theory-Introduction%20to%20Game%20Theory-rosybrown)</a>
 
+<a href="GameTheory/NormalFormGames" target="_blank" rel="noopener noreferrer">![](https://img.shields.io/badge/Game%20Theory-Normal%20Form%20Games-rosybrown)</a>
+
 
 
 ## ECON 102 - Introduction to Macroeconomics
